@@ -1,1 +1,1 @@
-alert("Sup losers");
+ExternalInterface.call("function(msg){ alert(msg); }", "lols");
