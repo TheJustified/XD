@@ -1,0 +1,4 @@
+import flash.external.ExternalInterface;
+
+var docTitle:String = ExternalInterface.call("function () {return window.document.title;}");
+ExternalInterface.call("alert", "Alerting an Actionscript variable: " + docTitle);
