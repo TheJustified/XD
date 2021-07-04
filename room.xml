@@ -16,7 +16,7 @@
 	<Person x="-5050" y="1600" z="0" width="800" height="200" from="districts/boardwalk/vehicle_store" />
 
 	<!-- how fast person walks in this room -->
-	<Walk speed="800220" framerate="40"/>
+	<Walk speed="8000" framerate="40"/>
 
 	<!-- camera settings -->
 	<Camera x="0" y="-4450" z="2750" focalX="0" focalY="-300" focalLength="1600" />
@@ -93,20 +93,20 @@
 
 		<Asset file="/i/world/shared/assets/news_02.swf" name="news2" layer="10" coords="screen" x="-490" y="136" required="false"/>
 		<Asset file="/i/world/shared/assets/gem_atm.swf" name="gem_atm" layer="10" coords="screen" x="425" y="171" required="false" visible="false"/>
-		<Asset file="sequence" scale="0.7" name="sideshow sign" layer="21" coords="screen" x="1249" y="151" required="false">
+-->		<!--<Asset file="sequence" scale="0.7" name="sideshow sign" layer="21" coords="screen" x="1249" y="151" required="false">
 			<sequence file="ss_lcd_01.swf"/>
 			<sequence file="ss_lcd_02.swf"/>
 			<sequence file="ss_lcd_03.swf"/>
 			<sequence file="ss_lcd_04.swf"/>
 			<sequence file="ss_lcd_05.swf"/>
-		</Asset>
+		</Asset>-->
 		<Asset file="randomizer_open.swf" name="randomizer_open" layer="50" coords="screen" x="-110" y="0" required="false" stopframe="0" depth="1999" />
 		<!-- randomizer when activated -->
 		<Asset file="randomizer_closed.swf" name="randomizer_closed" layer="50" coords="screen" x="-110" y="0" depth="1999" />
 
 		<!-- code -->
 		<Asset file="randomizer.swf" name="randomizer" type="app" classname="Randomizer" layer="ui" x="0" y="0" />
-		<Asset file="/i/world/shared/bin/sideshow_select.swf" scale="1" name="sideshow_ui" type="app" layer="40" coords="screen" x="1300" y="100" visible="false"/>-->
+		<!--<Asset file="/i/world/shared/bin/sideshow_select.swf" scale="1" name="sideshow_ui" type="app" layer="40" coords="screen" x="1300" y="100" visible="false"/>-->
 		<Asset file="/i/world/shared/bin/store_select.swf" scale="0.6" name="store_ui" type="app" layer="30" coords="screen" x="390" y="280" visible="false"/>
 
 	</Assets>
@@ -194,21 +194,21 @@
 			<Vertex x="70" y="360" />
 		</Shape>
 	<!-- This is click area for buying stuff during holidays halloween easter and xmas-->
-    <Shape name="buybasket" coords="screen" fill="none" color1="0x00ff00" layer="20" cursor="hand" >
+    <!--<Shape name="buybasket" coords="screen" fill="none" color1="0x00ff00" layer="20" cursor="hand" >
 			<Vertex x="-310" y="200" />
 			<Vertex x="-210" y="200" />
 			<Vertex x="-210" y="360" />
 			<Vertex x="-310" y="360" />
-		</Shape>
+		</Shape>-->
 
 	</Shapes>
 
-  <Layout gridsquare="200000">
+  <Layout gridsquare="200">
     <Perimeter coords="world">
-      <Vertex x="-9999" y="200000" z="0"/>
-      <Vertex x="-9999" y="200000" z="0"/>
-      <Vertex x="-9999" y="320000" z="0"/>
-      <Vertex x="-9999" y="320000" z="0"/>
+      <Vertex x="-6550" y="200" z="0"/>
+      <Vertex x="5950" y="200" z="0"/>
+      <Vertex x="5950" y="3200" z="0"/>
+      <Vertex x="-6550" y="3200" z="0"/>
     </Perimeter>
     <Nowalk>
     </Nowalk>
@@ -406,16 +406,16 @@
 			<step action="play" target="easterswing" />
 		</Action> -->
 
-		 Halloween Buy basket -->
-		<Action name="halloweenswinging" target="halloweenswing" trigger="periodic" interval="4000" >
+		<!-- Halloween Buy basket -->
+		<!--<Action name="halloweenswinging" target="halloweenswing" trigger="periodic" interval="4000" >
 			<step action="play" target="halloweenswing" />
-		</Action>
+		</Action>-->
 
 
 		<!--BUYBASKET - FOR THE POPUP SHOP- easter xmas halloween -->
-		<Action name="buybasket" target="buybasket" trigger="click">
+		<!--<Action name="buybasket" target="buybasket" trigger="click">
 			<step action="event" target="shop" />
-		</Action>
+		</Action>-->
 	</Actions>
 
 	<!-- Slots are places that only one person can occupy at a time, e.g. a chair.  Slots are referenced based on order in this list. -->
@@ -430,7 +430,7 @@
 
 	<!-- Positions are locations that are referenced by NPCs.  Allows us to move an NPC in world w/o rebuilding quests -->
 	<Positions>
-		<Position x="-300" y="2200" z="0"/>
+		<Position x="-950" y="2200" z="0"/>
 		<Position x="-1650" y="2000" z="0"/>
 		<Position x="-1710" y="1900" z="0"/>
 	</Positions>
