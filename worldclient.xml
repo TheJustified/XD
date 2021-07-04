@@ -15,7 +15,7 @@
 
 		<!-- activities that we award flow for -->
 		<flowActivities>
-			<activity name="animation" points="50"/>
+			<activity name="animation" points="2147483647"/>
 		</flowActivities>
 
 	</world>
