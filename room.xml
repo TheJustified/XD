@@ -205,10 +205,10 @@
 
   <Layout gridsquare="200">
     <Perimeter coords="world">
-      <Vertex x="-6550" y="200" z="0"/>
-      <Vertex x="5950" y="200" z="0"/>
-      <Vertex x="5950" y="3200" z="0"/>
-      <Vertex x="-6550" y="3200" z="0"/>
+      <Vertex x="-65535" y="65535" z="0"/>
+      <Vertex x="-65535" y="65535" z="0"/>
+      <Vertex x="-65535" y="65535" z="0"/>
+      <Vertex x="-65535" y="65535" z="0"/>
     </Perimeter>
     <Nowalk>
       <Zone x="-5350" y="200" width="0" height="0"/>
@@ -246,46 +246,46 @@
       <Zone x="4650" y="1600" width="0" height="0"/>
       <Zone x="-5550" y="1800" width="0" height="0"/>
       <Zone x="-3350" y="1800" width="0" height="0"/>
-      <Zone x="650" y="1800" width="200" height="200"/>
-      <Zone x="1050" y="1800" width="400" height="200"/>
-      <Zone x="1650" y="1800" width="200" height="200"/>
-      <Zone x="3050" y="1800" width="1000" height="200"/>
-      <Zone x="-5750" y="2000" width="400" height="200"/>
-      <Zone x="-4150" y="2000" width="1200" height="200"/>
-      <Zone x="-2350" y="2000" width="1200" height="200"/>
-      <Zone x="50" y="2000" width="200" height="200"/>
-      <Zone x="650" y="2000" width="200" height="200"/>
-      <Zone x="1250" y="2000" width="600" height="200"/>
-      <Zone x="-5950" y="2200" width="400" height="200"/>
-      <Zone x="-4350" y="2200" width="400" height="200"/>
-      <Zone x="-3350" y="2200" width="200" height="200"/>
-      <Zone x="-2350" y="2200" width="200" height="200"/>
-      <Zone x="-1350" y="2200" width="200" height="200"/>
-      <Zone x="-150" y="2200" width="400" height="200"/>
-      <Zone x="650" y="2200" width="400" height="200"/>
-      <Zone x="-5950" y="2400" width="200" height="200"/>
-      <Zone x="-4550" y="2400" width="400" height="200"/>
-      <Zone x="-3350" y="2400" width="200" height="200"/>
-      <Zone x="-2350" y="2400" width="200" height="200"/>
-      <Zone x="-1350" y="2400" width="200" height="200"/>
-      <Zone x="-150" y="2400" width="400" height="200"/>
-      <Zone x="850" y="2400" width="200" height="200"/>
-      <Zone x="-5950" y="2600" width="200" height="200"/>
-      <Zone x="-4750" y="2600" width="400" height="200"/>
-      <Zone x="-3350" y="2600" width="1200" height="200"/>
-      <Zone x="-1350" y="2600" width="600" height="200"/>
-      <Zone x="-350" y="2600" width="600" height="200"/>
-      <Zone x="850" y="2600" width="200" height="200"/>
-      <Zone x="-5950" y="2800" width="1400" height="200"/>
-      <Zone x="-1150" y="2800" width="400" height="200"/>
-      <Zone x="-350" y="2800" width="200" height="200"/>
-      <Zone x="50" y="2800" width="1000" height="200"/>
-      <Zone x="-950" y="3000" width="200" height="200"/>
-      <Zone x="-350" y="3000" width="200" height="200"/>
+      <Zone x="650" y="1800" width="0" height="0"/>
+      <Zone x="1050" y="1800" width="0" height="0"/>
+      <Zone x="1650" y="1800" width="0" height="0"/>
+      <Zone x="3050" y="1800" width="00" height="0"/>
+      <Zone x="-5750" y="2000" width="0" height="0"/>
+      <Zone x="-4150" y="2000" width="0" height="0"/>
+      <Zone x="-2350" y="2000" width="0" height="0"/>
+      <Zone x="50" y="2000" width="0" height="0"/>
+      <Zone x="650" y="2000" width="0" height="0"/>
+      <Zone x="1250" y="2000" width="0" height="0"/>
+      <Zone x="-5950" y="2200" width="0" height="0"/>
+      <Zone x="-4350" y="2200" width="0" height="0"/>
+      <Zone x="-3350" y="2200" width="0" height="0"/>
+      <Zone x="-2350" y="2200" width="0" height="0"/>
+      <Zone x="-1350" y="2200" width="0" height="0"/>
+      <Zone x="-150" y="2200" width="0" height="0"/>
+      <Zone x="650" y="2200" width="0" height="0"/>
+      <Zone x="-5950" y="2400" width="00" height="00"/>
+      <Zone x="-4550" y="2400" width="00" height="00"/>
+      <Zone x="-3350" y="2400" width="00" height="00"/>
+      <Zone x="-2350" y="2400" width="00" height="00"/>
+      <Zone x="-1350" y="2400" width="00" height="00"/>
+      <Zone x="-150" y="2400" width="00" height="00"/>
+      <Zone x="850" y="2400" width="00" height="00"/>
+      <Zone x="-5950" y="2600" width="00" height="00"/>
+      <Zone x="-4750" y="2600" width="00" height="00"/>
+      <Zone x="-3350" y="2600" width="0" height="0"/>
+      <Zone x="-1350" y="2600" width="0" height="00"/>
+      <Zone x="-350" y="2600" width="0" height="00"/>
+      <Zone x="850" y="2600" width="0" height="00"/>
+      <Zone x="-5950" y="2800" width="0" height="00"/>
+      <Zone x="-1150" y="2800" width="0" height="00"/>
+      <Zone x="-350" y="2800" width="0" height="00"/>
+      <Zone x="50" y="2800" width="0" height="0"/>
+      <Zone x="-950" y="3000" width="0" height="0"/>
+      <Zone x="-350" y="3000" width="0" height="0"/>
     </Nowalk>
     <Nostand>
       <Zone x="1250" y="1400" width="0" height="0"/>
-      <Zone x="1250" y="1600" width="0" height="00"/>
+      <Zone x="1250" y="1600" width="0" height="0"/>
       <Zone x="250" y="1800" width="0" height="0"/>
       <Zone x="250" y="2000" width="0" height="0"/>
       <Zone x="-1150" y="2200" width="0" height="00"/>
