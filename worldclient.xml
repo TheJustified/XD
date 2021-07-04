@@ -6,11 +6,11 @@
 
 		<chat>
 			<canned url=""/>
-			<chatbubble width="100" height="64" tail="30" offset="0"/>
+			<chatbubble width="10000" height="6400" tail="3000" offset="0"/>
 		</chat>
 
 		<characters>
-			<namelabel font="_sans" size="12" emebed="false" color="0xeeeeee"/>
+			<namelabel font="_sans" size="30" emebed="true" color="0xeeeeee"/>
 		</characters>
 
 		<!-- activities that we award flow for -->
