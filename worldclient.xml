@@ -24,12 +24,12 @@
 	<avatar_animations>
 		<female>
 			<static animation="static" url="i/avatars/animation/female/static"/>
-			<walk animation="walk_001" url="i/avatars/animation/female/dance_002"/>
+			<walk animation="walk_001" url="i/avatars/animation/female/walk_001"/>
 			<sit animation="sit" url="i/avatars/animation/female/sit"/>
 			<idle animation="idle_stop_root" url="i/avatars/animation/female/idle_stop_root"/>
 			<idle animation="idle_stop_001" url="i/avatars/animation/female/idle_stop_001"/>
-			<idle animation="idle_stop_002" url="i/avatars/animation/female/idle_stop_002"/>
-			<idle animation="idle_stop_003" url="i/avatars/animation/female/idle_stop_003"/>
+			<idle animation="idle_stop_002" url="i/avatars/animation/female/idle_stop_001"/>
+			<idle animation="idle_stop_003" url="i/avatars/animation/female/idle_stop_001"/>
 
 			<item url="i/avatars/attire/underwear/fglove3">
 				<sit animation="sit_hold" url="i/avatars/animation/female/sit_hold"/>
