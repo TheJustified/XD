@@ -211,8 +211,8 @@
       <Vertex x="-6550" y="3200" z="0"/>
     </Perimeter>
     <Nowalk>
-      <Zone x="-5350" y="200" width="2000" height="200"/>
-      <Zone x="-2750" y="200" width="200" height="200"/>
+      <Zone x="-5350" y="200" width="0" height="0"/>
+      <Zone x="-2750" y="200" width="0" height="200"/>
       <Zone x="-350" y="200" width="200" height="200"/>
       <Zone x="2050" y="200" width="2000" height="200"/>
       <Zone x="-5550" y="400" width="3000" height="200"/>
@@ -284,14 +284,14 @@
       <Zone x="-350" y="3000" width="200" height="200"/>
     </Nowalk>
     <Nostand>
-      <Zone x="1250" y="1400" width="400" height="200"/>
-      <Zone x="1250" y="1600" width="400" height="200"/>
-      <Zone x="250" y="1800" width="400" height="200"/>
-      <Zone x="250" y="2000" width="400" height="200"/>
-      <Zone x="-1150" y="2200" width="200" height="200"/>
-      <Zone x="-1150" y="2400" width="200" height="200"/>
-      <Zone x="-750" y="2800" width="400" height="200"/>
-      <Zone x="-750" y="3000" width="400" height="200"/>
+      <Zone x="1250" y="1400" width="0" height="0"/>
+      <Zone x="1250" y="1600" width="0" height="00"/>
+      <Zone x="250" y="1800" width="0" height="0"/>
+      <Zone x="250" y="2000" width="0" height="0"/>
+      <Zone x="-1150" y="2200" width="0" height="00"/>
+      <Zone x="-1150" y="2400" width="0" height="0"/>
+      <Zone x="-750" y="2800" width="0" height="0"/>
+      <Zone x="-750" y="3000" width="0" height="0"/>
     </Nostand>
 </Layout>
 
