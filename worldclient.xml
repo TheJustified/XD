@@ -24,7 +24,7 @@
 	<avatar_animations>
 		<female>
 			<static animation="static" url="i/avatars/animation/female/static"/>
-			<walk animation="walk_001" url="/i/avatars/animation/female/dance_002"/>
+			<walk animation="walk_001" url="i/avatars/animation/female/dance_002"/>
 			<sit animation="sit" url="i/avatars/animation/female/sit"/>
 			<idle animation="idle_stop_root" url="i/avatars/animation/female/idle_stop_root"/>
 			<idle animation="idle_stop_001" url="i/avatars/animation/female/idle_stop_001"/>
