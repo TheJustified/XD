@@ -133,7 +133,7 @@
 			<Vertex x="1000" y="450"  />
 			<Vertex x="830" y="450"  />
 		</Shape>
-<!--		<Shape name="arcade_door" coords="screen" fill="none" color1="0x00ff00" layer="19" cursor="controller">
+		<Shape name="arcade_door" coords="screen" fill="none" color1="0x00ff00" layer="19" cursor="controller">
 			<Vertex x="-750" y="200"  />
 			<Vertex x="-550" y="200"  />
 			<Vertex x="-550" y="360"  />
@@ -161,7 +161,7 @@
 			<Vertex x="-345" y="320" />
 			<Vertex x="-400" y="330" />
 		</Shape>
-<!--		<Shape name="atm" coords="screen" fill="none" color1="0x00ff00" layer="21" cursor="phone" >
+		<Shape name="atm" coords="screen" fill="none" color1="0x00ff00" layer="21" cursor="phone" >
 			<Vertex x="490" y="300" />
 			<Vertex x="590" y="300" />
 			<Vertex x="590" y="450" />
@@ -318,7 +318,7 @@
 			<step name="closedoor" action="playOnceReverse" target="starlight door" delay="1200"/>
 			<step name="sound" action="playSound" target="doorclosing" delay="1200"/>
 		</Action>
-<!--
+
 		<Action name="sideshow_ui" target="sideshow door" trigger="none" exclude_static="true">
 			<step name="show_ui" action="show" target="sideshow_ui" delay="0" />
 			<step name="2" action="play" target="sideshow_ui" delay="100" />
@@ -430,11 +430,11 @@
 				<Action name="sit1" target="seat1" trigger="click" >
 			<step action="slot" target="0" />
 		</Action>
-<!--		<Action name="atm" target="atm" trigger="click" >
+		<Action name="atm" target="atm" trigger="click" >
 			<step action="atm" target="atm" />
 		</Action>-->
 
-<!--		<Action name="atm_anim" target="atm" trigger="over" >
+		<Action name="atm_anim" target="atm" trigger="over" >
 			<step action="show" target="gem_atm" delay="0" />
 			<step action="playOnceForward" target="gem_atm" delay="0"/>
 			<step action="hide" target="gem_atm" delay="8000" />
@@ -455,12 +455,12 @@
 		<Action name="marketplace" target="marketplace" trigger="click">
 			<step action="link" target="shop/marketplace" delay="0"/>
 		</Action>
-<!--
+
 		<Action name="arcade" target="arcade_door" trigger="click">
 			<step action="link" target="game" />
 		</Action>-->
 
-<!--		<Action name="arcade_anim" target="arcade_door" trigger="over">
+		<Action name="arcade_anim" target="arcade_door" trigger="over">
 			<step action="playOnceForward" target="arcade_front"/>
 		</Action>
 -->
@@ -486,7 +486,7 @@
 		</Action> -->
 
 		<!-- Halloween Buy basket -->
-		<Action name="halloweenswinging" target="halloweenswing" trigger="periodic" interval="4000" >
+		<!--<Action name="halloweenswinging" target="halloweenswing" trigger="periodic" interval="4000" >
 			<step action="play" target="halloweenswing" />
 		</Action>-->
 
