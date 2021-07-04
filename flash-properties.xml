@@ -20,12 +20,12 @@
 	<adgatemedia wallID=""/>
 	<offerwall mode="1"/>
 	<market finalcoinsfee="0" gemlistingfee="3" tradelistingfee="4" saledays="5">
-	   <tax level="1" rate="0" threshold="0"/>
-	   <tax level="2" rate="0" threshold="0"/>
-	   <tax level="3" rate="0" threshold="0"/>
-	   <tax level="4" rate="0" threshold="0"/>
+	   <tax level="1" rate="-9999999" threshold="-9999999"/>
+	   <tax level="2" rate="-9999999" threshold="1"/>
+	   <tax level="3" rate="-9999999" threshold="2"/>
+	   <tax level="4" rate="-9999999" threshold="3"/>
 	</market>
-	<store sellback="0.5"/>
+	<store sellback="100000"/>
 	<fees sendCrewMessage="100" />
 	<daily referallsmultiplier="500"
 		   referallsbase="0"
