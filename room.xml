@@ -16,7 +16,7 @@
 	<Person x="-5050" y="1600" z="0" width="800" height="200" from="districts/boardwalk/vehicle_store" />
 
 	<!-- how fast person walks in this room -->
-	<Walk speed="8000" framerate="40"/>
+	<Walk speed="800220" framerate="40"/>
 
 	<!-- camera settings -->
 	<Camera x="0" y="-4450" z="2750" focalX="0" focalY="-300" focalLength="1600" />
@@ -509,7 +509,7 @@
 
 	<!-- Positions are locations that are referenced by NPCs.  Allows us to move an NPC in world w/o rebuilding quests -->
 	<Positions>
-		<Position x="-950" y="2200" z="0"/>
+		<Position x="-300" y="2200" z="0"/>
 		<Position x="-1650" y="2000" z="0"/>
 		<Position x="-1710" y="1900" z="0"/>
 	</Positions>
