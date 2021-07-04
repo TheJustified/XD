@@ -39,7 +39,7 @@
 	<Assets>
 
 		<!--BENTO BOX PROMO-->
-		<Asset file="boardwalk_bento.jpg" scale="1.0" name="back" layer="0" coords="screen" x="-1750" y="0" />
+		<!--<Asset file="boardwalk_bento.jpg" scale="1.0" name="back" layer="0" coords="screen" x="-1750" y="0" />
 		<Asset file="foreground.swf" scale="1.0" name="foreground" layer="99" coords="screen" x="-1629" y="518" blendmode="erase" depth="0"/>
 
 		<!--Commented out during Bento Box & Halloween & easter i.e. this is the NORMAL one-->
@@ -58,18 +58,18 @@
 		<!--<Asset file="boardwalk_foreground_04.swf" scale="1.0" name="fore4" layer="63" coords="screen" x="1136" y="538" />-->
 
 
-		<Asset file="mask_randomizer.swf" scale="1.0" name="mask_randomizer" layer="50" x="20" y="59" blendmode="erase" depth="2000"/>
+		<!--<Asset file="mask_randomizer.swf" scale="1.0" name="mask_randomizer" layer="50" x="20" y="59" blendmode="erase" depth="2000"/>
 
 		<!-- doors-->
 
-		<Asset file="fresh_door.swf" scale="1.0" name="fresh door" layer="21" coords="screen" x="344" y="203" cursor="door"/>
+		<!--<Asset file="fresh_door.swf" scale="1.0" name="fresh door" layer="21" coords="screen" x="344" y="203" cursor="door"/>
 		<Asset file="buzz_door.swf" scale="1.0" name="buzz door" layer="50" coords="screen" x="-180" y="126" depth="2900" cursor="door"/>
 		<Asset file="starlight_door.swf" scale="1.0" name="starlight door" layer="25" coords="screen" x="818" y="196" cursor="door"/>
 		<Asset file="randomizer_door.swf" scale="1.0" name="randomizer door" layer="50" coords="screen" x="65" y="165" depth="2000"/>
 
 		<!-- animations -->
 
-		<Asset file="to_pier_btn.swf" scale="1.0" name="topier" layer="4" coords="screen" x="-652" y="590" visible="false" required="false" cursor="door"/>
+		<!--<Asset file="to_pier_btn.swf" scale="1.0" name="topier" layer="4" coords="screen" x="-652" y="590" visible="false" required="false" cursor="door"/>
 		<!-- XMAS -->
 		<!--<Asset file="stocking.swf" scale=".8" name="easterswing" layer="9" coords="screen" x="-350" y="200" required="false"/> -->
 		<!-- EASTER -->
@@ -78,7 +78,7 @@
 	  <!--<Asset file="halloween_basket.swf" scale=".8" name="halloweenswing" layer="9" coords="screen" x="-345" y="255" required="false"/>
 		<Asset file="caldron_3.swf" scale="1.2" name="cauldron" layer="9" coords="screen" x="-1835" y="125" required="false" stopframe="0" />-->
 
-		<Asset file="ea_sign.swf" scale="1.0" name="ea_sign" layer="9" coords="screen" x="-2250" y="92" required="false"/>
+		<!--<Asset file="ea_sign.swf" scale="1.0" name="ea_sign" layer="9" coords="screen" x="-2250" y="92" required="false"/>
 		<Asset file="starlight.swf" scale="1.0" name="starlight" layer="50" coords="screen" x="706" y="0" required="false"/>
 
 		<!--Taking buzzcup anim out in winter so it doesn't go through the stocking buying shop-->
@@ -89,7 +89,7 @@
 
 		<!--Taking ottoparts out for snow-->
 
-		 <Asset file="otto_parts_front.swf" scale="1.0" name="otto_parts" layer="9" x="-1356" y="20" required="false" /> 
+		<!-- <Asset file="otto_parts_front.swf" scale="1.0" name="otto_parts" layer="9" x="-1356" y="20" required="false" /> 
 
 		<Asset file="/i/world/shared/assets/news_02.swf" name="news2" layer="10" coords="screen" x="-490" y="136" required="false"/>
 		<Asset file="/i/world/shared/assets/gem_atm.swf" name="gem_atm" layer="10" coords="screen" x="425" y="171" required="false" visible="false"/>
@@ -100,20 +100,20 @@
 			<sequence file="ss_lcd_04.swf"/>
 			<sequence file="ss_lcd_05.swf"/>
 		</Asset>-->
-		<Asset file="randomizer_open.swf" name="randomizer_open" layer="50" coords="screen" x="-110" y="0" required="false" stopframe="0" depth="1999" />
+		<!--<Asset file="randomizer_open.swf" name="randomizer_open" layer="50" coords="screen" x="-110" y="0" required="false" stopframe="0" depth="1999" />
 		<!-- randomizer when activated -->
-		<Asset file="randomizer_closed.swf" name="randomizer_closed" layer="50" coords="screen" x="-110" y="0" depth="1999" />
+		<!--<Asset file="randomizer_closed.swf" name="randomizer_closed" layer="50" coords="screen" x="-110" y="0" depth="1999" />
 
 		<!-- code -->
-		<Asset file="randomizer.swf" name="randomizer" type="app" classname="Randomizer" layer="ui" x="0" y="0" />
+		<!--<Asset file="randomizer.swf" name="randomizer" type="app" classname="Randomizer" layer="ui" x="0" y="0" />
 		<!--<Asset file="/i/world/shared/bin/sideshow_select.swf" scale="1" name="sideshow_ui" type="app" layer="40" coords="screen" x="1300" y="100" visible="false"/>-->
-		<Asset file="/i/world/shared/bin/store_select.swf" scale="0.6" name="store_ui" type="app" layer="30" coords="screen" x="390" y="280" visible="false"/>
+		<!--<Asset file="/i/world/shared/bin/store_select.swf" scale="0.6" name="store_ui" type="app" layer="30" coords="screen" x="390" y="280" visible="false"/>
 
 	</Assets>
 
 	<!-- polygon shapes used for defining hot spots -->
 	<!-- set fill to "solid" to make the polygon visible (useful for debugging) -->
-	<Shapes>
+	<!--<Shapes>
 		<Shape name="arrow" coords="screen" fill="none" color1="0x00ff00" layer="15" cursor="door">
 			<Vertex x="-343" y="590"  />
 			<Vertex x="-338" y="620"  />
@@ -139,7 +139,7 @@
 			<Vertex x="-550" y="360"  />
 			<Vertex x="-750" y="360"  />
 		</Shape>-->
-		<Shape name="threads_interior" coords="screen" fill="none" color1="0x00ff00" layer="20" >
+		<!--<Shape name="threads_interior" coords="screen" fill="none" color1="0x00ff00" layer="20" >
 			<Vertex x="350" y="200"  />
 			<Vertex x="550" y="200"  />
 			<Vertex x="550" y="440"  />
@@ -167,7 +167,7 @@
 			<Vertex x="590" y="450" />
 			<Vertex x="490" y="450" />
 		</Shape>-->
-		<Shape name="beach" coords="screen" fill="none" color1="0x00ff00" layer="20" cursor="door" >
+		<!--<Shape name="beach" coords="screen" fill="none" color1="0x00ff00" layer="20" cursor="door" >
 			<Vertex x="1250" y="300" />
 			<Vertex x="1740" y="300" />
 			<Vertex x="1740" y="560" />
