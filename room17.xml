@@ -2,7 +2,7 @@
 
 	<!-- location of person upon initial entry to room -->
 	<!-- a random location is chosen within the rectangle by width and height -->
-	<Person x="-1450" y="800" z="0" width="3000" height="400" from="default" visible="false" />
+	<Person x="-1450" y="800" z="0" width="3000" height="400" from="default" visible="true" />
 	<Person x="3150" y="600" z="0" width="200" height="200" from="arcadia-starlight-interior" />
 	<Person x="3050" y="800" z="0" width="200" height="200" from="districts/boardwalk/starlight_lounge" />
 	<Person x="-750" y="2200" width="400" height="200" from="thebuzz" />
@@ -194,12 +194,12 @@
 			<Vertex x="70" y="360" />
 		</Shape>
 	<!-- This is click area for buying stuff during holidays halloween easter and xmas-->
-    <!--<Shape name="buybasket" coords="screen" fill="none" color1="0x00ff00" layer="20" cursor="hand" >
+    <Shape name="buybasket" coords="screen" fill="none" color1="0x00ff00" layer="20" cursor="hand" >
 			<Vertex x="-310" y="200" />
 			<Vertex x="-210" y="200" />
 			<Vertex x="-210" y="360" />
 			<Vertex x="-310" y="360" />
-		</Shape>-->
+		</Shape>
 
 	</Shapes>
 
@@ -407,15 +407,15 @@
 		</Action> -->
 
 		<!-- Halloween Buy basket -->
-		<!--<Action name="halloweenswinging" target="halloweenswing" trigger="periodic" interval="4000" >
+		<Action name="halloweenswinging" target="halloweenswing" trigger="periodic" interval="4000" >
 			<step action="play" target="halloweenswing" />
-		</Action>-->
+		</Action>
 
 
 		<!--BUYBASKET - FOR THE POPUP SHOP- easter xmas halloween -->
-		<!--<Action name="buybasket" target="buybasket" trigger="click">
+		<Action name="buybasket" target="buybasket" trigger="click">
 			<step action="event" target="shop" />
-		</Action>-->
+		</Action>
 	</Actions>
 
 	<!-- Slots are places that only one person can occupy at a time, e.g. a chair.  Slots are referenced based on order in this list. -->
@@ -437,7 +437,7 @@
 
 	<DanceOff enabled="true"/>
 
-	<Throwing enabled="true"/>
+	<Throwing enabled="false"/>
 
 	<!-- location where a golden key may be placed -->
 	<GoldenKey enabled="true" >
@@ -449,14 +449,14 @@
 
 	<!-- BELOW is BUY BASKET ITEMS - for HALLOWEEN AND XMAS And EASTER - THEY ARE GEM ITEMS -->
 
-	<!--<Shop>
+	<Shop>
 		<Male>
 			<Item id="2075556" />
 		</Male>
 		<Female>
 			<Item id="2075557" />
 		</Female>
-	</Shop>-->
+	</Shop>
 
 
 </Room>
