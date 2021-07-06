@@ -1,9 +1,9 @@
 
 <Room name="Poker" width="990" height="658" >
-	<Character stopClothingAnimation="false" vehicles="false" />
+	<Character stopClothingAnimation="true" vehicles="false" />
 	<!-- location of person upon initial entry to room -->
 	<!-- the width and height define an area. a random location is chosen within area  -->
-	<Person x="-4000" y="0" z="150" width="0" height="0"/> 
+	<Person x="-4000" y="0" z="150" width="0" height="0" visible="false" /> 
 	<!--<Person x="200" y="200" z="150" width="0" height="0" visible="true" />-->
 
 	<!-- how fast person walks in this room -->
@@ -41,7 +41,7 @@
 	list of vertices.  gridsquare is the size of grid squares used to partition the 
 	room for path finding. ideally the perimeter dimensions should be multiples of the 
 	grid square size. -->
-	<Layout gridsquare="400" max_mouseclick_distance="40000" >
+	<Layout gridsquare="400" max_mouseclick_distance="40000" />
 		<Perimeter>
  <Vertex x="-65535" y="2" z="0"/>
 <Vertex x="65535" y="2" z="0"/>
