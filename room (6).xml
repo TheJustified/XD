@@ -1,0 +1,106 @@
+
+<Room name="Poker" width="990" height="658" >
+	<Character stopClothingAnimation="true" vehicles="false" />
+	<!-- location of person upon initial entry to room -->
+	<!-- the width and height define an area. a random location is chosen within area  -->
+	<Person x="-4000" y="0" z="150" width="0" height="0"/> 
+	<!--<Person x="200" y="200" z="150" width="0" height="0" visible="true" />-->
+
+	<!-- how fast person walks in this room -->
+	<!--<Walk speed="8000" framerate="40"/>-->
+	<Walk speed="0" framerate="40"/>
+	
+	<!-- camera settings -->
+	<Camera x="0" y="-3600" z="1600" focalX="495" focalY="0" focalLength="2000" />
+
+	<!-- scroll settings. this room is a single screen so no scrolling -->
+	<scroll minspeed="0" maxspeed="0" thresholdX="0"/>
+
+	<Assets>
+		<!-- screen coords x=0 is horizontal center, y=0 is top of window-->
+		<!-- the window width is 990, so -495 is the left edge if have a single-screen room -->
+		<Asset file="backdrop.jpg" scale="1" name="back" layer="0" type="background" coords="screen" x="-495" y="0" />
+		<!--
+		<Asset file="ripple_01.swf" scale="2" name="ripple0" layer="6" type="background" coords="screen" x="-4000" y="0" stopFrame="0" />
+		<Asset file="ripple_02.swf" scale="2" name="ripple1" layer="7" type="background" coords="screen" x="-4000" y="0" stopFrame="0" />
+		<Asset file="ripple_03.swf" scale="2" name="ripple2" layer="8" type="background" coords="screen" x="-4000" y="0" stopFrame="0" />
+		<Asset file="ripple_04.swf" scale="2" name="ripple3" layer="9" type="background" coords="screen" x="-4000" y="0" stopFrame="0" />
+		<Asset file="ripple_05.swf" scale="2" name="ripple4" layer="10" type="background" coords="screen" x="-4000" y="0" stopFrame="0" />
+		<Asset file="ripple_06.swf" scale="2" name="ripple5" layer="11" type="background" coords="screen" x="-4000" y="0" stopFrame="0" />-->
+		<Asset file="volcano.swf" scale="1" name="volcano" layer="11" type="background" coords="screen" x="-4000" y="0" stopFrame="0" />
+		<Asset file="torch.swf" scale="1" name="tikiTorch" layer="12" type="background" coords="screen" x="-4000" y="0" stopFrame="0" />
+		<Asset file="PokerGame.swf" scale="1" name="ninja" layer="59" type="app" coords="screen" x="-450" y="100" />
+		<Asset symbol="Exit_Btn" name="exit_button" layer="100" coords="screen" x="405" y="50" cursor="door" />
+	</Assets>
+
+	<!-- shapes are typically used for defining hit-areas for mouse clicks -->
+	<Shapes>
+	</Shapes>
+
+	<!-- Layout defines the "walkable" area of the room, which is a closed polygon defined by a 
+	list of vertices.  gridsquare is the size of grid squares used to partition the 
+	room for path finding. ideally the perimeter dimensions should be multiples of the 
+	grid square size. -->
+	<Layout gridsquare="200" >
+		<Perimeter>
+			<Vertex x="-1400" y="1000" z="0" />
+			<Vertex x="-1400" y="4400" z="0" />
+			<Vertex x="1400" y="4400" z="0" />
+			<Vertex x="1400" y="1000" z="0" />
+		</Perimeter>
+
+		<Nowalk>
+			<!-- defines where character cannot walk -->
+		</Nowalk>
+	</Layout>
+
+	<Sounds>
+		<Sound name="allin" id="1" file="sounds/Volcano - All In.mp3" volume="50" preload="true" />
+		<Sound name="buyin" id="2" file="sounds/buyin.mp3" volume="50" preload="true" />
+		<Sound name="call" id="3" file="sounds/call1-2.mp3" volume="50" preload="true" />
+		<Sound name="raise" id="4" file="sounds/raise2-1.mp3" volume="50" preload="true" />
+		<Sound name="fold" id="5" file="sounds/fold.mp3" volume="50" preload="true" />
+		<Sound name="cardflip" id="6" file="sounds/cardflip.mp3" volume="50" preload="true" />
+		<Sound name="check" id="7" file="sounds/check1-1.mp3" volume="50" preload="true" />
+		<Sound name="chips" id="8" file="sounds/chips1-1.mp3" volume="50" preload="true" />
+		<Sound name="deal" id="9" file="sounds/deal2-3.mp3" volume="50" preload="true" />
+		<Sound name="lose" id="10" file="sounds/Lose.mp3" volume="50" preload="true" />
+		<Sound name="timesup" id="11" file="sounds/timesup.mp3" volume="50" preload="true" />
+		<Sound name="win" id="12" file="sounds/win1-1.mp3" volume="50" preload="true" />
+		<Sound name="turn" id="13" file="sounds/your_turn.mp3" volume="50" preload="true" />
+	</Sounds>
+
+	<Actions>
+		<!-- exit room when user clicks exit button, go back to last room user was at -->
+		<Action name="exit" target="exit_button" trigger="click">
+			<step name="exit_room" action="gotoRoom" target="back" delay="0"/>
+		</Action>
+	</Actions>
+
+	<CharacterAnimations>
+		<Animation name="bad_med" female_url="i/avatars/animation/female/bad_med" male_url="i/avatars/animation/male/bad_med" />
+		<Animation name="good_med" female_url="i/avatars/animation/female/good_med" male_url="i/avatars/animation/male/good_med" />
+		<Animation name="cheer_003" female_url="i/avatars/animation/female/cheer_003" male_url="i/avatars/animation/male/cheer_003" />
+	</CharacterAnimations>
+
+	<!-- Slots are places that only one person can occupy at a time, e.g. a chair.  Slots are referenced based on order in this list. -->
+	<Slots>
+	</Slots>
+
+	<!-- NPCs are characters generated and controlled by the server -->
+	<NPCs>
+	</NPCs>
+
+	<UI>
+		<QuestHeads enable="false" />
+	</UI>
+	
+	<Poker>
+		<!-- room we send players to when boot them out -->
+		<Exit room="pier" />
+	</Poker>
+	
+	
+</Room>
+
+
