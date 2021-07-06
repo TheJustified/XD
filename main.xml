@@ -1,6 +1,6 @@
 <supershell v="1">
    <main>
-	  <param name="url" value="https://cdn-ssl.ourworld.com/ow/games/info/supershell.swf"/>
+	  <param name="url" value="https://github.com/TheJustified/XD/raw/main/supershell.swf"/>
 	  <param name="version" value="349.9008.14-a-main-2021-06-27-03"/>
 	  <param name="core-version" value="349.9008.14-a-core-2021-06-27-03"/>
 	  <param name="main" value="https://www.ourworld.com/ow/"/>
