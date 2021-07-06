@@ -451,10 +451,10 @@
 
 	<Shop>
 		<Male>
-			<Item id="2614901" />
+			<Item id="94001" />
 		</Male>
 		<Female>
-			<Item id="2614901" />
+			<Item id="94001" />
 		</Female>
 	</Shop>
 
