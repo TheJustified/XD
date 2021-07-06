@@ -174,11 +174,11 @@
 			<Nest name="Tech Nest" itemid="4000446" level="11" url="i/avatars/ministores/hatchlings/nests/nest_005/level1/nest_lvl001.swf" url2="i/avatars/ministores/hatchlings/eggs/hatchling_001/hatch4/estage.swf" text="condo.hatch.unlock_tech" upgrades="4000447,4000448,4000449" />
 		</Nests>
 		<Eggs>
-			<Egg name="Sheep Egg" itemid="4000262" level="1" exp="2" base="62" profit="12" url="i/avatars/ministores/hatchlings/eggs/hatchling_007/hatch1/level1/item.swf" sound="critter_sheep"/>
+			<Egg name="Sheep Egg" itemid="4000262" level="1" exp="999999999" base="999999999" profit="999999999" url="i/avatars/ministores/hatchlings/eggs/hatchling_007/hatch1/level1/item.swf" sound="critter_sheep"/>
 			<Egg name="Forest Fairy Egg" itemid="4000090" level="1" exp="3" base="145" profit="45" url="i/avatars/ministores/hatchlings/eggs/hatchling_003/hatch1/level1/item.swf" sound="critter_forestfairy" />
-			<Egg name="Ghosty Ghost Egg" itemid="4000047" level="1" exp="3" base="350" profit="150" url="i/avatars/ministores/hatchlings/eggs/hatchling_002/hatch1/level1/item.swf" sound="critter_ghost" />
+			<Egg name="Ghosty Ghost Egg" itemid="1187301" level="1" exp="3" base="350" profit="150" url="i/avatars/ministores/hatchlings/eggs/hatchling_002/hatch1/level1/item.swf" sound="critter_ghost" />
 
-			<Egg name="Dolphin Egg" itemid="4000348" level="2" exp="2" base="180" profit="30" url="i/avatars/ministores/hatchlings/eggs/hatchling_009/hatch1/level2/item.swf" text="condo.hatch.unlock_dolphin" url2="i/avatars/ministores/hatchlings/popup/hatchling_009.swf" sound="critter_dolphin" />
+			<Egg name="Dolphin Egg" itemid="4000348" level="2" exp="20000000" base="180" profit="3000" url="i/avatars/ministores/hatchlings/eggs/hatchling_009/hatch1/level2/item.swf" text="condo.hatch.unlock_dolphin" url2="i/avatars/ministores/hatchlings/popup/hatchling_009.swf" sound="critter_dolphin" />
 			<Egg name="Sun Fairy Egg" itemid="4000000" level="4" exp="3" base="370" profit="120" url="i/avatars/ministores/hatchlings/eggs/hatchling_001/hatch1/level2/item.swf" text="condo.hatch.unlock_fairy" url2="i/avatars/ministores/hatchlings/popup/hatchling_001.swf" sound="critter_sunfairy" />
 			<Egg name="Puff Puff Trio Egg" itemid="4000133" level="1" exp="3" base="555" profit="55" url="i/avatars/ministores/hatchlings/eggs/hatchling_004/hatch1/level1/item.swf" text="condo.hatch.unlock_puff" url2="i/avatars/ministores/hatchlings/popup/hatchling_004.swf" sound="critter_puff" >
 				<Hatch itemid="4000262" count="1"/>
@@ -238,43 +238,43 @@
 				<Hatch itemid="4001228" count="20"/>
 			</Egg>
 		
-			<!--
-			<Egg name="Wolf Egg" itemid="4001314" level="1" exp="20" base="0" profit="0" url="i/avatars/ministores/hatchlings/gem_eggs/gem_egg_001/hatch1/level1/item.swf" gem="true" />
-			<Egg name="Momonga Egg" itemid="4001321" level="1" exp="20" base="0" profit="0" url="i/avatars/ministores/hatchlings/gem_eggs/gem_egg_002/hatch1/level1/item.swf" gem="true" />
-			-->
+
+			<Egg name="Wolf Egg" itemid="4001314" level="1" exp="20" base="0" profit="0" url="i/avatars/ministores/hatchlings/gem_eggs/gem_egg_001/hatch1/level1/item.swf" gem="false" />
+			<Egg name="Momonga Egg" itemid="4001321" level="1" exp="20" base="0" profit="0" url="i/avatars/ministores/hatchlings/gem_eggs/gem_egg_002/hatch1/level1/item.swf" gem="false" />
+
 			
-			<Egg name="Alpaca Egg" itemid="4001328" level="1" exp="20" base="0" profit="0" url="i/avatars/ministores/hatchlings/gem_eggs/gem_egg_003/hatch1/level1/item.swf" gem="true"/>
+			<Egg name="Alpaca Egg" itemid="4001328" level="1" exp="20" base="0" profit="0" url="i/avatars/ministores/hatchlings/gem_eggs/gem_egg_003/hatch1/level1/item.swf" gem="false"/>
 				
 		</Eggs>
 		<Levels>
 			<!-- levels must be in ascending order -->
-			<Level id="1" nests="3" exp="0" />
-			<Level id="2" nests="3" exp="10"/>
-			<Level id="3" nests="4" exp="20" />
-			<Level id="4" nests="4" exp="30" />
-			<Level id="5" nests="4" exp="60" />
-			<Level id="6" nests="4" exp="110" />
-			<Level id="7" nests="5" exp="135" />
-			<Level id="8" nests="5" exp="160" />
-			<Level id="9" nests="5" exp="220" upgrade_reminder="true" />
-			<Level id="10" nests="5" exp="300"  />
-			<Level id="11" nests="6" exp="345" />
-			<Level id="12" nests="6" exp="390" />
-			<Level id="13" nests="6" exp="480" upgrade_reminder="true" />
-			<Level id="14" nests="7" exp="605" />
-			<Level id="15" nests="7" exp="730" />
-			<Level id="16" nests="7" exp="875" />
-			<Level id="17" nests="8" exp="1045" />
-			<Level id="18" nests="8" exp="1235" />
-			<Level id="19" nests="8" exp="1425" />
-			<Level id="20" nests="8" exp="1670" />
-			<Level id="21" nests="9" exp="1915" />
-			<Level id="22" nests="9" exp="2200" />
-			<Level id="23" nests="9" exp="2520" />
-			<Level id="24" nests="9" exp="2880" />
-			<Level id="25" nests="10" exp="3240" />
-			<Level id="26" nests="10" exp="3690" />
-			<Level id="27" nests="10" exp="0x7fffffff" />
+			<Level id="1" nests="30" exp="0" />
+			<Level id="2" nests="30" exp="10"/>
+			<Level id="3" nests="40" exp="20" />
+			<Level id="4" nests="40" exp="30" />
+			<Level id="5" nests="40" exp="60" />
+			<Level id="6" nests="40" exp="110" />
+			<Level id="7" nests="50" exp="135" />
+			<Level id="8" nests="50" exp="160" />
+			<Level id="9" nests="50" exp="220" upgrade_reminder="true" />
+			<Level id="10" nests="50" exp="300"  />
+			<Level id="11" nests="60" exp="345" />
+			<Level id="12" nests="60" exp="390" />
+			<Level id="13" nests="60" exp="480" upgrade_reminder="true" />
+			<Level id="14" nests="70" exp="605" />
+			<Level id="15" nests="70" exp="730" />
+			<Level id="16" nests="70" exp="875" />
+			<Level id="17" nests="80" exp="1045" />
+			<Level id="18" nests="80" exp="1235" />
+			<Level id="19" nests="80" exp="1425" />
+			<Level id="20" nests="80" exp="1670" />
+			<Level id="21" nests="90" exp="1915" />
+			<Level id="22" nests="90" exp="2200" />
+			<Level id="23" nests="90" exp="2520" />
+			<Level id="24" nests="90" exp="2880" />
+			<Level id="25" nests="100" exp="3240" />
+			<Level id="26" nests="100" exp="3690" />
+			<Level id="27" nests="100" exp="0x7fffffff" />
 		</Levels>
 		<Upgrades>
 			<Capacity itemid="2029102" nests="2" upgrade="2029103" />
