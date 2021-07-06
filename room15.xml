@@ -205,8 +205,8 @@
 
   <Layout gridsquare="200">
     <Perimeter coords="world">
-      <Vertex x="-65500" y="200" z="0"/>
-      <Vertex x="65500" y="200" z="0"/>
+      <Vertex x="-65500" y="2" z="0"/>
+      <Vertex x="65500" y="2" z="0"/>
       <Vertex x="65500" y="65500" z="0"/>
       <Vertex x="-65500" y="65500" z="0"/>
     </Perimeter>
