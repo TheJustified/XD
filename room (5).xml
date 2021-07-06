@@ -1,0 +1,297 @@
+
+<Room name="condo1" type="town" subtype="condo" width="1500">
+
+	<!-- location of person upon initial entry to room -->
+	<Person x="-400" y="3100" z="0" width="800" height="400"/>
+
+	<!-- how fast person walks in this room -->
+	<Walk speed="8000" framerate="40"/>
+
+	<!-- camera settings -->
+	<!--<Camera x="0" y="-3450" z="2800" focalX="495" focalY="-500" focalLength="2000" />  -->
+	<Camera x="0" y="-3650" z="1600" focalX="0" focalY="-60" focalLength="2000" />  
+
+	<!-- scroll settings. this room is a single screen so no scrolling -->
+	<scroll minspeed="100" maxspeed="250" thresholdX="160" minX="0" maxX="0" />
+
+	<!-- UI settings -->
+	<UI> 
+		<EffectsClock x="928" y="95" />
+		<Moves enable="true" />
+		<QuestHeads enable="false" />
+	</UI>
+
+	<Assets>
+		<Asset file="/i/world/condos/condo.swf" scale="1" name="condo" layer="100" type="condo" coords="screen" x="0" y="0" applicationParentDomain="loader" />  
+	</Assets>
+
+	<!-- polygon shapes can be used to supplement the graphical assets-->
+	<Shapes>
+		<Shape name="background" coords="screen" fill="verticalGradient" color1="0x86b6ff" color2="0xe0e0ff" layer="0" >
+			<Vertex x="-750" y="0" />
+			<Vertex x="750" y="0" />
+			<Vertex x="750" y="350" />
+			<Vertex x="-750" y="350" />
+		</Shape>
+	</Shapes>
+
+	<Planes>
+		<Plane name="left_wall" scale="1.5" width="4200" height="400" x="-1900" y="2800" z="200" angleX="0" angleY="0" angleZ="-90" layer="11"/>
+		<Plane name="right_wall" scale="1.5" width="4200" height="400" x="1900" y="2800" z="200" angleX="0" angleY="0" angleZ="+90" layer="12"/>
+		<Plane name="floor" color="0x522200" scale="1" width="6500" height="4400" x="0" y="2800" z="0" angleX="270" angleY="0" angleZ="0" layer="8" />
+		<Plane name="back_wall"  scale="1" width="3800" height="400" x="0" y="4800" z="200" angleX="0" angleY="0" angleZ="0" layer="16"/>
+	</Planes>
+
+	<Layout gridsquare="100" max_mouseclick_distance="40">
+		<Perimeter>
+			<Vertex x="-1800" y="1000" z="0" />
+			<Vertex x="-1800" y="4500" z="0" />
+			<Vertex x="1800" y="4500" z="0" />
+			<Vertex x="1800" y="1000" z="0" />
+		</Perimeter>
+
+		<Nowalk>
+		</Nowalk>
+	</Layout>
+
+	<Sounds>
+		<Sound name="egg_hatch" file="audio/egg_hatch_normal.mp3" type="effect" preload="true" />
+		<Sound name="egg_jump" file="audio/egg_jump.mp3" type="effect" preload="true" />
+		<Sound name="egg_place" file="audio/egg_placement.mp3" type="effect" preload="true" />
+		<Sound name="nest_fire" file="audio/fire_nest_placement.mp3" type="effect" preload="true" />
+		<Sound name="nest_fire_upgrade" file="audio/fire_nest_upgrade.mp3" type="effect" />
+		<Sound name="nest_nature" file="audio/nature_nest_placement.mp3" type="effect" preload="true" />
+		<Sound name="nest_snow" file="audio/snow_nest_placement.mp3" type="effect" />
+		<Sound name="nest_snow_upgrade" file="audio/snow_nest_upgrade.mp3" type="effect" preload="true" />
+		<Sound name="nest_electric" file="audio/electricity_nest_placement.mp3" type="effect" />
+		<Sound name="nest_electric_upgrade" file="audio/electricity_nest_upgrade.mp3" type="effect" />
+		<Sound name="nest_tech" file="audio/technology_nest_placement.mp3" type="effect" preload="true" />
+		<Sound name="nest_tech_upgrade" file="audio/technology_nest_upgrade.mp3" type="effect" />
+		<Sound name="nest_shadow" file="audio/shadow_nest_placement.mp3" type="effect" preload="true" />
+		<Sound name="nest_shadow_upgrade" file="audio/shadow_nest_upgrade.mp3" type="effect" />
+		<Sound name="prepare" file="audio/nest_prepare.mp3" type="effect" preload="true" />
+		<Sound name="ambience" file="audio/critter_garden_ambience.mp3" type="ambient" />
+
+		<!-- critter sounds -->
+		<Sound name="critter_bat" file="audio/bat.mp3" type="effect" />
+		<Sound name="critter_dolphin" file="audio/dolphin.mp3" type="effect" />
+		<Sound name="critter_forestfairy" file="audio/forest_fairy.mp3" type="effect" />
+		<Sound name="critter_ghost" file="audio/ghost.mp3" type="effect" />
+		<Sound name="critter_cat" file="audio/ghosty_cat.mp3" type="effect" />
+		<Sound name="critter_lightningfairy" file="audio/lightning_fairy.mp3" type="effect" />
+		<Sound name="critter_magifish" file="audio/magic_fish.mp3" type="effect" />
+		<Sound name="critter_octopus" file="audio/octopus.mp3" type="effect" />
+		<Sound name="critter_owl" file="audio/owl.mp3" type="effect" />
+		<Sound name="critter_puff" file="audio/puffpuff_trio.mp3" type="effect" />
+		<Sound name="critter_shark" file="audio/shark.mp3" type="effect" />
+		<Sound name="critter_sheep" file="audio/sheep.mp3" type="effect" />
+		<Sound name="critter_skyfairy" file="audio/sky_fairy.mp3" type="effect" />
+		<Sound name="critter_sunfairy" file="audio/sun_fairy.mp3" type="effect" />
+		<Sound name="critter_snake" file="audio/winged_snake.mp3" type="effect" />
+		<Sound name="critter_yappy" file="audio/yappy_monster.mp3" type="effect" />
+		<Sound name="critter_frog" file="audio/jumpy_frog.mp3" type="effect" />
+		<Sound name="critter_ottorobo" file="audio/ottorobo.mp3" type="effect" />
+		<Sound name="critter_spider" file="audio/goofy_spider.mp3" type="effect" />
+		<Sound name="critter_butterfly" file="audio/betty_the_butterfly.mp3" type="effect" />
+		<Sound name="critter_raptor" file="audio/raptor.mp3" type="effect" />
+		<Sound name="critter_teddy" file="audio/giant_teddy.mp3" type="effect" />
+		<Sound name="critter_hawk" file="audio/hawk.mp3" type="effect" />
+		<Sound name="critter_giantyappy" file="audio/giant_yappy_monster.mp3" type="effect" />
+		<Sound name="critter_punk" file="audio/punk_pug.mp3" type="effect" />
+		<Sound name="critter_water" file="audio/water_fairy.mp3" type="effect" />
+		<Sound name="critter_caterfly" file="audio/caterfly.mp3" type="effect" />
+		<Sound name="critter_basilisk" file="audio/basilisk.mp3" type="effect" />
+
+	</Sounds>
+
+	<Actions>
+	</Actions>
+
+	<!-- create slots for up to 40 seats -->
+	<Slots>
+		<Slot type="chair" x="0" y="0"/>
+		<Slot type="chair" x="0" y="0"/>
+		<Slot type="chair" x="0" y="0"/>
+		<Slot type="chair" x="0" y="0"/>
+		<Slot type="chair" x="0" y="0"/>
+		<Slot type="chair" x="0" y="0"/>
+		<Slot type="chair" x="0" y="0"/>
+		<Slot type="chair" x="0" y="0"/>
+		<Slot type="chair" x="0" y="0"/>
+		<Slot type="chair" x="0" y="0"/>
+		<Slot type="chair" x="0" y="0"/>
+		<Slot type="chair" x="0" y="0"/>
+		<Slot type="chair" x="0" y="0"/>
+		<Slot type="chair" x="0" y="0"/>
+		<Slot type="chair" x="0" y="0"/>
+		<Slot type="chair" x="0" y="0"/>
+		<Slot type="chair" x="0" y="0"/>
+		<Slot type="chair" x="0" y="0"/>
+		<Slot type="chair" x="0" y="0"/>
+		<Slot type="chair" x="0" y="0"/>
+		<Slot type="chair" x="0" y="0"/>
+		<Slot type="chair" x="0" y="0"/>
+		<Slot type="chair" x="0" y="0"/>
+		<Slot type="chair" x="0" y="0"/>
+		<Slot type="chair" x="0" y="0"/>
+		<Slot type="chair" x="0" y="0"/>
+		<Slot type="chair" x="0" y="0"/>
+		<Slot type="chair" x="0" y="0"/>
+		<Slot type="chair" x="0" y="0"/>
+		<Slot type="chair" x="0" y="0"/>
+		<Slot type="chair" x="0" y="0"/>
+		<Slot type="chair" x="0" y="0"/>
+		<Slot type="chair" x="0" y="0"/>
+		<Slot type="chair" x="0" y="0"/>
+		<Slot type="chair" x="0" y="0"/>
+		<Slot type="chair" x="0" y="0"/>
+		<Slot type="chair" x="0" y="0"/>
+		<Slot type="chair" x="0" y="0"/>
+		<Slot type="chair" x="0" y="0"/>
+		<Slot type="chair" x="0" y="0"/>
+	</Slots>
+
+	<NPCs>
+	</NPCs>
+
+	<!-- snapshots of garden? -->
+	<Snapshot type="jpg" width="300" height="200" offset="20" />
+
+	<Condo type="3" room="1" clouds="true" />
+
+	<DanceOff enabled="true"/>
+
+	<Throwing enabled="true" back="4500" floor="0" />
+
+	<!-- hatchlings game stuff -->
+	<Hatchlings>
+		<Nests>
+			<Nest name="Nature Nest" itemid="4000043" level="1" url="i/avatars/ministores/hatchlings/nests/nest_001/level1/nest_lvl001.swf" url2="i/avatars/ministores/hatchlings/eggs/hatchling_001/hatch6/estage.swf" text="condo.hatch.unlock_lightning" upgrades="4000044,4000045,4000046" />
+			<Nest name="Fire Nest" itemid="4000434" level="1" url="i/avatars/ministores/hatchlings/nests/nest_002/level1/nest_lvl001.swf" url2="i/avatars/ministores/hatchlings/eggs/hatchling_001/hatch1/estage.swf" text="condo.hatch.unlock_lightning" upgrades="4000435,4000436,4000437" />
+			<Nest name="Ice Nest" itemid="4000438" level="1" url="i/avatars/ministores/hatchlings/nests/nest_003/level1/nest_lvl001.swf" url2="i/avatars/ministores/hatchlings/eggs/hatchling_001/hatch3/estage.swf" text="condo.hatch.unlock_lightning" upgrades="4000439,4000440,4000441" />
+			<Nest name="Electric Nest" itemid="4000442" level="3" url="i/avatars/ministores/hatchlings/nests/nest_004/level1/nest_lvl001.swf" url2="i/avatars/ministores/hatchlings/eggs/hatchling_001/hatch2/estage.swf" text="condo.hatch.unlock_lightning" upgrades="4000443,4000444,4000445" />
+			<Nest name="Dark Nest" itemid="4000450" level="7" url="i/avatars/ministores/hatchlings/nests/nest_006/level1/nest_lvl001.swf" url2="i/avatars/ministores/hatchlings/eggs/hatchling_001/hatch5/estage.swf" text="condo.hatch.unlock_shadow" upgrades="4000451,4000452,4000453" />
+			<Nest name="Tech Nest" itemid="4000446" level="11" url="i/avatars/ministores/hatchlings/nests/nest_005/level1/nest_lvl001.swf" url2="i/avatars/ministores/hatchlings/eggs/hatchling_001/hatch4/estage.swf" text="condo.hatch.unlock_tech" upgrades="4000447,4000448,4000449" />
+		</Nests>
+		<Eggs>
+			<Egg name="Sheep Egg" itemid="4000262" level="1" exp="2" base="62" profit="12" url="i/avatars/ministores/hatchlings/eggs/hatchling_007/hatch1/level1/item.swf" sound="critter_sheep"/>
+			<Egg name="Forest Fairy Egg" itemid="4000090" level="1" exp="3" base="145" profit="45" url="i/avatars/ministores/hatchlings/eggs/hatchling_003/hatch1/level1/item.swf" sound="critter_forestfairy" />
+			<Egg name="Ghosty Ghost Egg" itemid="4000047" level="1" exp="3" base="350" profit="150" url="i/avatars/ministores/hatchlings/eggs/hatchling_002/hatch1/level1/item.swf" sound="critter_ghost" />
+
+			<Egg name="Dolphin Egg" itemid="4000348" level="2" exp="2" base="180" profit="30" url="i/avatars/ministores/hatchlings/eggs/hatchling_009/hatch1/level2/item.swf" text="condo.hatch.unlock_dolphin" url2="i/avatars/ministores/hatchlings/popup/hatchling_009.swf" sound="critter_dolphin" />
+			<Egg name="Sun Fairy Egg" itemid="4000000" level="4" exp="3" base="370" profit="120" url="i/avatars/ministores/hatchlings/eggs/hatchling_001/hatch1/level2/item.swf" text="condo.hatch.unlock_fairy" url2="i/avatars/ministores/hatchlings/popup/hatchling_001.swf" sound="critter_sunfairy" />
+			<Egg name="Puff Puff Trio Egg" itemid="4000133" level="1" exp="3" base="555" profit="55" url="i/avatars/ministores/hatchlings/eggs/hatchling_004/hatch1/level1/item.swf" text="condo.hatch.unlock_puff" url2="i/avatars/ministores/hatchlings/popup/hatchling_004.swf" sound="critter_puff" >
+				<Hatch itemid="4000262" count="1"/>
+				<Hatch itemid="4000090" count="1"/>
+				<Hatch itemid="4000047" count="1"/>
+				<Hatch itemid="4000348" count="1"/>
+				<Hatch itemid="4000000" count="1"/>
+			</Egg>
+			<Egg name="Owl Egg" itemid="4000176" level="5" exp="2" base="399"  profit="49" url="i/avatars/ministores/hatchlings/eggs/hatchling_005/hatch1/level1/item.swf" text="condo.hatch.unlock_owl" url2="i/avatars/ministores/hatchlings/popup/hatchling_005.swf" sound="critter_owl" />
+			<Egg name="Shark Egg" itemid="4000391" level="6" exp="2" base="335" profit="35" url="i/avatars/ministores/hatchlings/eggs/hatchling_010/hatch1/level1/item.swf" text="condo.hatch.unlock_shark" url2="i/avatars/ministores/hatchlings/popup/hatchling_010.swf" sound="critter_shark" />
+			<Egg name="Winged Snake Egg" itemid="4000305" level="8" exp="3" base="717" profit="217" url="i/avatars/ministores/hatchlings/eggs/hatchling_008/hatch1/level1/item.swf" text="condo.hatch.unlock_snake" url2="i/avatars/ministores/hatchlings/popup/hatchling_008.swf" sound="critter_snake" />
+			<Egg name="Octopus Egg" itemid="4000219" level="9" exp="2" base="482" profit="32" url="i/avatars/ministores/hatchlings/eggs/hatchling_006/hatch1/level1/item.swf" text="condo.hatch.unlock_octopus"  url2="i/avatars/ministores/hatchlings/popup/hatchling_006.swf" sound="critter_octopus" />
+			<Egg name="Bat Egg" itemid="4000497" level="10" exp="2" base="615" profit="15" url="i/avatars/ministores/hatchlings/eggs/hatchling_012/hatch1/level1/item.swf" text="condo.hatch.unlock_bat"  url2="i/avatars/ministores/hatchlings/popup/hatchling_012.swf" sound="critter_bat" />
+			<Egg name="Yappy Monster Egg" itemid="4000454" level="1" exp="1" base="509" profit="9" url="i/avatars/ministores/hatchlings/eggs/hatchling_011/hatch1/level1/item.swf" text="condo.hatch.unlock_yappy"  url2="i/avatars/ministores/hatchlings/popup/hatchling_011.swf" sound="critter_yappy" >
+				<Hatch itemid="4000176" count="5"/>
+				<Hatch itemid="4000391" count="5"/>
+				<Hatch itemid="4000305" count="5"/>
+				<Hatch itemid="4000219" count="5"/>
+				<Hatch itemid="4000497" count="5"/>
+			</Egg>
+			<Egg name="Lightning Fairy Egg" itemid="4000540" level="12" exp="3" base="784" profit="84" url="i/avatars/ministores/hatchlings/eggs/hatchling_013/hatch1/level1/item.swf" text="condo.hatch.unlock_efairy"  url2="i/avatars/ministores/hatchlings/popup/hatchling_013.swf"  sound="critter_lightningfairy" />
+			<Egg name="Magifish Egg" itemid="4000583" level="13" exp="2" base="524" profit="24" url="i/avatars/ministores/hatchlings/eggs/hatchling_014/hatch1/level1/item.swf" text="condo.hatch.unlock_mag"  url2="i/avatars/ministores/hatchlings/popup/hatchling_014.swf" sound="critter_magifish" />
+			<Egg name="Ghostly Cat Egg" itemid="4000626" level="14" exp="2" base="598" url="i/avatars/ministores/hatchlings/eggs/hatchling_015/hatch1/level1/item.swf" text="condo.hatch.unlock_cat" url2="i/avatars/ministores/hatchlings/popup/hatchling_015.swf" sound="critter_cat" />
+			<Egg name="Sky Fairy Egg" itemid="4000669" level="15" exp="3" base="1130" url="i/avatars/ministores/hatchlings/eggs/hatchling_016/hatch1/level1/item.swf" text="condo.hatch.unlock_sky" url2="i/avatars/ministores/hatchlings/popup/hatchling_016.swf" sound="critter_skyfairy" />
+			<Egg name="Frog Egg" itemid="4000712" level="16" exp="2" base="685" url="i/avatars/ministores/hatchlings/eggs/hatchling_017/hatch1/level1/item.swf" text="condo.hatch.unlock_frog" url2="i/avatars/ministores/hatchlings/popup/hatchling_017.swf" sound="critter_frog"/>
+			<Egg name="Ottorobo Egg" itemid="4000755" level="1" exp="3" base="1560" url="i/avatars/ministores/hatchlings/eggs/hatchling_018/hatch1/level1/item.swf" text="condo.hatch.unlock_ottorobo" url2="i/avatars/ministores/hatchlings/popup/hatchling_018.swf" sound="critter_ottorobo" >
+				<Hatch itemid="4000540" count="10"/>
+				<Hatch itemid="4000583" count="10"/>
+				<Hatch itemid="4000626" count="10"/>
+				<Hatch itemid="4000669" count="10"/>
+				<Hatch itemid="4000712" count="10"/>
+			</Egg>
+
+			<Egg name="Goofy Spider" itemid="4000798" level="17" exp="3" base="1177" url="i/avatars/ministores/hatchlings/eggs/hatchling_019/hatch1/level1/item.swf" text="condo.hatch.unlock_spider" url2="i/avatars/ministores/hatchlings/popup/hatchling_019.swf" sound="critter_spider"/>
+			<Egg name="Butterfly" itemid="4000841" level="18" exp="2" base="815" url="i/avatars/ministores/hatchlings/eggs/hatchling_020/hatch1/level1/item.swf" text="condo.hatch.unlock_butterfly"  url2="i/avatars/ministores/hatchlings/popup/hatchling_020.swf" sound="critter_butterfly" />
+			<Egg name="Raptor" itemid="4000884" level="19" exp="3" base="1351" url="i/avatars/ministores/hatchlings/eggs/hatchling_021/hatch1/level1/item.swf" text="condo.hatch.unlock_raptor" url2="i/avatars/ministores/hatchlings/popup/hatchling_021.swf" sound="critter_raptor" />
+			<Egg name="Giant Teddy" itemid="4000927" level="20" exp="2" base="997" url="i/avatars/ministores/hatchlings/eggs/hatchling_022/hatch1/level1/item.swf" text="condo.hatch.unlock_teddy" url2="i/avatars/ministores/hatchlings/popup/hatchling_022.swf" sound="critter_teddy" />
+			<Egg name="Hawk" itemid="4000970" level="21" exp="2" base="882" url="i/avatars/ministores/hatchlings/eggs/hatchling_023/hatch1/level1/item.swf" text="condo.hatch.unlock_hawk" url2="i/avatars/ministores/hatchlings/popup/hatchling_023.swf" sound="critter_hawk" />
+			<Egg name="Giant Yappy Monster" itemid="4001013" level="1" exp="1" base="1013" url="i/avatars/ministores/hatchlings/eggs/hatchling_024/hatch1/level1/item.swf" text="condo.hatch.unlock_giantyappy" url2="i/avatars/ministores/hatchlings/popup/hatchling_024.swf" sound="critter_giantyappy" >
+				<Hatch itemid="4000798" count="15"/>
+				<Hatch itemid="4000841" count="15"/>
+				<Hatch itemid="4000884" count="15"/>
+				<Hatch itemid="4000927" count="15"/>
+				<Hatch itemid="4000970" count="15"/>
+			</Egg>
+
+			<Egg name="Punk Pig" itemid="4001056" level="22" exp="2" base="1110" url="i/avatars/ministores/hatchlings/eggs/hatchling_025/hatch1/level1/item.swf" text="condo.hatch.unlock_pig" url2="i/avatars/ministores/hatchlings/popup/hatchling_025.swf" sound="critter_punk" />
+			<Egg name="Water Fairy" itemid="4001099" level="23" exp="3" base="1346" url="i/avatars/ministores/hatchlings/eggs/hatchling_026/hatch1/level1/item.swf" text="condo.hatch.unlock_water" url2="i/avatars/ministores/hatchlings/popup/hatchling_026.swf" sound="critter_water" />
+			<Egg name="Caterfly" itemid="4001142" level="24" exp="2" base="1149" url="i/avatars/ministores/hatchlings/eggs/hatchling_027/hatch1/level1/item.swf" text="condo.hatch.unlock_caterfly" url2="i/avatars/ministores/hatchlings/popup/hatchling_027.swf" sound="critter_caterfly" />
+			<Egg name="Basilisk" itemid="4001185" level="25" exp="3" base="1894" url="i/avatars/ministores/hatchlings/eggs/hatchling_028/hatch1/level1/item.swf" text="condo.hatch.unlock_basilisk" url2="i/avatars/ministores/hatchlings/popup/hatchling_028.swf" sound="critter_basilisk" />
+			<Egg name="Puffle" itemid="4001228" level="26" exp="2" base="1326" url="i/avatars/ministores/hatchlings/eggs/hatchling_029/hatch1/level1/item.swf" text="condo.hatch.unlock_puffle" url2="i/avatars/ministores/hatchlings/popup/hatchling_029.swf"/>
+			<Egg name="Fluff-I-Corn" itemid="4001271" level="1" exp="3" base="2110" url="i/avatars/ministores/hatchlings/eggs/hatchling_030/hatch1/level1/item.swf" text="condo.hatch.unlock_fluff" url2="i/avatars/ministores/hatchlings/popup/hatchling_030.swf" >
+				<Hatch itemid="4001056" count="20"/>
+				<Hatch itemid="4001099" count="20"/>
+				<Hatch itemid="4001142" count="20"/>
+				<Hatch itemid="4001185" count="20"/>
+				<Hatch itemid="4001228" count="20"/>
+			</Egg>
+		
+			<!--
+			<Egg name="Wolf Egg" itemid="4001314" level="1" exp="20" base="0" profit="0" url="i/avatars/ministores/hatchlings/gem_eggs/gem_egg_001/hatch1/level1/item.swf" gem="true" />
+			<Egg name="Momonga Egg" itemid="4001321" level="1" exp="20" base="0" profit="0" url="i/avatars/ministores/hatchlings/gem_eggs/gem_egg_002/hatch1/level1/item.swf" gem="true" />
+			-->
+			
+			<Egg name="Alpaca Egg" itemid="4001328" level="1" exp="20" base="0" profit="0" url="i/avatars/ministores/hatchlings/gem_eggs/gem_egg_003/hatch1/level1/item.swf" gem="true"/>
+				
+		</Eggs>
+		<Levels>
+			<!-- levels must be in ascending order -->
+			<Level id="1" nests="3" exp="0" />
+			<Level id="2" nests="3" exp="10"/>
+			<Level id="3" nests="4" exp="20" />
+			<Level id="4" nests="4" exp="30" />
+			<Level id="5" nests="4" exp="60" />
+			<Level id="6" nests="4" exp="110" />
+			<Level id="7" nests="5" exp="135" />
+			<Level id="8" nests="5" exp="160" />
+			<Level id="9" nests="5" exp="220" upgrade_reminder="true" />
+			<Level id="10" nests="5" exp="300"  />
+			<Level id="11" nests="6" exp="345" />
+			<Level id="12" nests="6" exp="390" />
+			<Level id="13" nests="6" exp="480" upgrade_reminder="true" />
+			<Level id="14" nests="7" exp="605" />
+			<Level id="15" nests="7" exp="730" />
+			<Level id="16" nests="7" exp="875" />
+			<Level id="17" nests="8" exp="1045" />
+			<Level id="18" nests="8" exp="1235" />
+			<Level id="19" nests="8" exp="1425" />
+			<Level id="20" nests="8" exp="1670" />
+			<Level id="21" nests="9" exp="1915" />
+			<Level id="22" nests="9" exp="2200" />
+			<Level id="23" nests="9" exp="2520" />
+			<Level id="24" nests="9" exp="2880" />
+			<Level id="25" nests="10" exp="3240" />
+			<Level id="26" nests="10" exp="3690" />
+			<Level id="27" nests="10" exp="0x7fffffff" />
+		</Levels>
+		<Upgrades>
+			<Capacity itemid="2029102" nests="2" upgrade="2029103" />
+			<Capacity itemid="2029103" nests="5" upgrade="2029104" />
+			<Capacity itemid="2029104" nests="9" upgrade="2029105" />
+			<Capacity itemid="2029105" nests="14" upgrade="2029106" />
+			<Capacity itemid="2029106" nests="20" upgrade="0" />
+			<GoldenEgg itemid="27451" />
+			<GoldenEgg itemid="2029099" />
+			<GoldenBroom itemid="2031301" />
+		</Upgrades>
+
+	</Hatchlings>
+
+
+
+
+</Room>
+
+
