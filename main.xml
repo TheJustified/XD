@@ -1,107 +1,106 @@
 <supershell v="1">
-   <main>
-	  <param name="url" value="https://github.com/TheJustified/XD/raw/main/supershell.swf"/>
-	  <param name="version" value="349.9008.14-a-main-2021-06-27-03"/>
-	  <param name="core-version" value="349.9008.14-a-core-2021-06-27-03"/>
-	  <param name="main" value="https://www.ourworld.com/ow/"/>
-	  <param name="cdn" value="https://cdn-ssl.ourworld.com/ow/"/>
-	  <param name="image" value="https://cdn-ssl.ourworld.com/i/"/>
-	  <param name="game-image" value="https://cdn-ssl.ourworld.com/i/ow/"/>
-	  <param name="cdn-dynamic-personal" value="https://s3e-main.ourworld.com/shared/"/>
-	  <param name="cdn-dynamic-photos" value="https://s3e-main.ourworld.com/shared/"/>
-	  <param name="cdn-dynamic-contests" value="https://s3e-main.ourworld.com/shared/"/>
-	  <param name="cdn-dynamic-crews" value="https://s3e-main.ourworld.com/shared/"/>
-	  <param name="cdn-dynamic-common" value="https://s3e-images.ourworld.com/shared/"/>
-      <param name="landing" value="103"/>
-	  <param name="env" value="supershell"/>
-	  <param name="future" value="false"/>
-   </main>
-    <mobile>
-        <param name="url" value="https://cdn-ssl.ourworld.com/ow/games/info/supershellair-mobile.swf"/>
-        <param name="version" value="349.9008.14-a-main-2021-06-27-03"/>
-	    <param name="core-version" value="349.9008.14-a-core-2021-06-27-03"/>
-        <param name="dsop" value="Y2wzdjNyIGhheG9yCg=="/>
-        <param name="main" value="https://www.ourworld.com/ow/"/>
-        <param name="cdn" value="https://cdn-ssl.ourworld.com/ow/"/>
-        <param name="image" value="https://cdn-ssl.ourworld.com/i/"/>
-        <param name="game-image" value="https://cdn-ssl.ourworld.com/i/ow/"/>
-        <param name="cdn-dynamic-personal" value="https://s3e-main.ourworld.com/shared/"/>
-        <param name="cdn-dynamic-photos" value="https://s3e-main.ourworld.com/shared/"/>
-        <param name="cdn-dynamic-contests" value="https://s3e-main.ourworld.com/shared/"/>
-        <param name="cdn-dynamic-crews" value="https://s3e-main.ourworld.com/shared/"/>
-        <param name="cdn-dynamic-common" value="https://s3e-images.ourworld.com/shared/"/>
-		<param name="env" value="supershell"/>
-        <param name="landing" value="103"/>
-	    <param name="future" value="false"/>
-    </mobile>
-    <slots>
-        <param name="url" value="https://cdn-ssl.ourworld.com/ow/games/info/mobileshell-slots.swf"/>
-        <param name="version" value="349.9008.14-a-main-2021-06-27-03"/>
-	    <param name="core-version" value="349.9008.14-a-core-2021-06-27-03"/>
-        <param name="main" value="https://www.ourworld.com/ow/"/>
-        <param name="cdn" value="https://cdn-ssl.ourworld.com/ow/"/>
-        <param name="image" value="https://cdn-ssl.ourworld.com/i/"/>
-        <param name="game-image" value="https://cdn-ssl.ourworld.com/i/ow/"/>
-        <param name="cdn-dynamic-personal" value="https://s3e-main.ourworld.com/shared/"/>
-        <param name="cdn-dynamic-photos" value="https://s3e-main.ourworld.com/shared/"/>
-        <param name="cdn-dynamic-contests" value="https://s3e-main.ourworld.com/shared/"/>
-        <param name="cdn-dynamic-crews" value="https://s3e-main.ourworld.com/shared/"/>
-        <param name="cdn-dynamic-common" value="https://s3e-images.ourworld.com/shared/"/>
-		<param name="env" value="slots"/>
-	    <param name="future" value="false"/>
-    </slots>
-	<fringo_mobile>
-		<param name="url" value="https://cdn-ssl.ourworld.com/ow/world/fringo_mobile/supershellair-fringo.swf"/>
-		<param name="version" value="349.9008.14-a-main-2021-06-27-03"/>
-	    <param name="core-version" value="349.9008.14-a-core-2021-06-27-03"/>
-		<param name="dsop" value="Y2wzdjNyIGhheG9yCg=="/>
-		<param name="main" value="https://www.ourworld.com/ow/"/>
-		<param name="cdn" value="https://cdn-ssl.ourworld.com/ow/"/>
-		<param name="image" value="https://cdn-ssl.ourworld.com/i/"/>
-		<param name="game-image" value="https://cdn-ssl.ourworld.com/i/ow/"/>
-		<param name="cdn-dynamic-personal" value="https://s3e-main.ourworld.com/shared/"/>
-		<param name="cdn-dynamic-photos" value="https://s3e-main.ourworld.com/shared/"/>
-		<param name="cdn-dynamic-contests" value="https://s3e-main.ourworld.com/shared/"/>
-		<param name="cdn-dynamic-crews" value="https://s3e-main.ourworld.com/shared/"/>
-		<param name="cdn-dynamic-common" value="https://s3e-images.ourworld.com/shared/"/>
-		<param name="env" value="fringo_mobile"/>
-	    <param name="future" value="false"/>
-	</fringo_mobile>
-   <custom name="poker1">
-      <param name="landing" value="142" />
-   </custom>
-   <custom name="pool1">
-      <param name="landing" value="136" />
-   </custom>
-   <custom name="dance1">
-      <param name="landing" value="116" />
-   </custom>
-   <custom name="localhost">
-	  <param name="url" value="http://localhost:8080/v/games/info/supershell.swf"/>
-	  <param name="main" value="http://localhost:8080/v/"/>
-	  <param name="cdn" value="http://localhost:8080/v/"/>
-	  <param name="image" value="http://localhost:8080/i/"/>
-	  <param name="cdn-dynamic-personal" value="http://localhost:8080/shared/"/>
-	  <param name="cdn-dynamic-photos" value="http://localhost:8080/shared/"/>
-	  <param name="cdn-dynamic-contests" value="http://localhost:8080/shared/"/>
-	  <param name="cdn-dynamic-crews" value="http://localhost:8080/shared/"/>
-	  <param name="cdn-dynamic-common" value="https://s3e-images.ourworld.com/shared/"/>
-	  <param name="future" value="false"/>
-  </custom>
-  <custom name="playtest">
-	  <param name="url" value="http://playtest.ourworld.com/v11/games/info/supershell.swf"/>
-	  <param name="main" value="http://playtest.ourworld.com/v11/"/>
-	  <param name="cdn" value="http://playtest.ourworld.com/v11/"/>
-	  <param name="image" value="http://playtest.ourworld.com/i/"/>
-	  <param name="cdn-dynamic-personal" value="http://playtest.ourworld.com/shared/"/>
-	  <param name="cdn-dynamic-photos" value="http://playtest.ourworld.com/shared/"/>
-	  <param name="cdn-dynamic-contests" value="http://playtest.ourworld.com/shared/"/>
-	  <param name="cdn-dynamic-crews" value="http://playtest.ourworld.com/shared/"/>
-	  <param name="cdn-dynamic-common" value="https://s3e-images.ourworld.com/shared/"/>
-	  <param name="future" value="false"/>
-  </custom>
-  <custom name="addictinggames">
-   <param name="env" value="addictinggames"/>
-  </custom>
+<main>
+<param name="url" value="https://cdn-ssl.ourworld.com/ow/games/info/supershell.swf"/>
+<param name="version" value="349.9008.14-a-main-2021-06-27-03"/>
+<param name="core-version" value="349.9008.14-a-core-2021-06-27-03"/>
+<param name="main" value="https://www.ourworld.com/ow/"/>
+<param name="cdn" value="https://cdn-ssl.ourworld.com/ow/"/>
+<param name="image" value="https://cdn-ssl.ourworld.com/i/"/>
+<param name="game-image" value="https://cdn-ssl.ourworld.com/i/ow/"/>
+<param name="cdn-dynamic-personal" value="https://s3e-main.ourworld.com/shared/"/>
+<param name="cdn-dynamic-photos" value="https://s3e-main.ourworld.com/shared/"/>
+<param name="cdn-dynamic-contests" value="https://s3e-main.ourworld.com/shared/"/>
+<param name="cdn-dynamic-crews" value="https://s3e-main.ourworld.com/shared/"/>
+<param name="cdn-dynamic-common" value="https://s3e-images.ourworld.com/shared/"/>
+<param name="landing" value="103"/>
+<param name="env" value="supershell"/>
+<param name="future" value="true"/>
+</main>
+<mobile>
+<param name="url" value="https://cdn-ssl.ourworld.com/ow/games/info/supershellair-mobile.swf"/>
+<param name="version" value="349.9008.14-a-main-2021-06-27-03"/>
+<param name="core-version" value="349.9008.14-a-core-2021-06-27-03"/>
+<param name="dsop" value="Y2wzdjNyIGhheG9yCg=="/>
+<param name="main" value="https://www.ourworld.com/ow/"/>
+<param name="cdn" value="https://cdn-ssl.ourworld.com/ow/"/>
+<param name="image" value="https://cdn-ssl.ourworld.com/i/"/>
+<param name="game-image" value="https://cdn-ssl.ourworld.com/i/ow/"/>
+<param name="cdn-dynamic-personal" value="https://s3e-main.ourworld.com/shared/"/>
+<param name="cdn-dynamic-photos" value="https://s3e-main.ourworld.com/shared/"/>
+<param name="cdn-dynamic-contests" value="https://s3e-main.ourworld.com/shared/"/>
+<param name="cdn-dynamic-crews" value="https://s3e-main.ourworld.com/shared/"/>
+<param name="cdn-dynamic-common" value="https://s3e-images.ourworld.com/shared/"/>
+<param name="env" value="supershell"/>
+<param name="landing" value="103"/>
+<param name="future" value="false"/>
+</mobile>
+<slots>
+<param name="url" value="https://cdn-ssl.ourworld.com/ow/games/info/mobileshell-slots.swf"/>
+<param name="version" value="349.9008.14-a-main-2021-06-27-03"/>
+<param name="core-version" value="349.9008.14-a-core-2021-06-27-03"/>
+<param name="main" value="https://www.ourworld.com/ow/"/>
+<param name="cdn" value="https://cdn-ssl.ourworld.com/ow/"/>
+<param name="image" value="https://cdn-ssl.ourworld.com/i/"/>
+<param name="game-image" value="https://cdn-ssl.ourworld.com/i/ow/"/>
+<param name="cdn-dynamic-personal" value="https://s3e-main.ourworld.com/shared/"/>
+<param name="cdn-dynamic-photos" value="https://s3e-main.ourworld.com/shared/"/>
+<param name="cdn-dynamic-contests" value="https://s3e-main.ourworld.com/shared/"/>
+<param name="cdn-dynamic-crews" value="https://s3e-main.ourworld.com/shared/"/>
+<param name="cdn-dynamic-common" value="https://s3e-images.ourworld.com/shared/"/>
+<param name="env" value="slots"/>
+<param name="future" value="false"/>
+</slots>
+<fringo_mobile>
+<param name="url" value="https://cdn-ssl.ourworld.com/ow/world/fringo_mobile/supershellair-fringo.swf"/>
+<param name="version" value="349.9008.14-a-main-2021-06-27-03"/>
+<param name="core-version" value="349.9008.14-a-core-2021-06-27-03"/>
+<param name="dsop" value="Y2wzdjNyIGhheG9yCg=="/>
+<param name="main" value="https://www.ourworld.com/ow/"/>
+<param name="cdn" value="https://cdn-ssl.ourworld.com/ow/"/>
+<param name="image" value="https://cdn-ssl.ourworld.com/i/"/>
+<param name="game-image" value="https://cdn-ssl.ourworld.com/i/ow/"/>
+<param name="cdn-dynamic-personal" value="https://s3e-main.ourworld.com/shared/"/>
+<param name="cdn-dynamic-photos" value="https://s3e-main.ourworld.com/shared/"/>
+<param name="cdn-dynamic-contests" value="https://s3e-main.ourworld.com/shared/"/>
+<param name="cdn-dynamic-crews" value="https://s3e-main.ourworld.com/shared/"/>
+<param name="cdn-dynamic-common" value="https://s3e-images.ourworld.com/shared/"/>
+<param name="env" value="fringo_mobile"/>
+<param name="future" value="false"/>
+</fringo_mobile>
+<custom name="poker1">
+<param name="landing" value="142"/>
+</custom>
+<custom name="pool1">
+<param name="landing" value="136"/>
+</custom>
+<custom name="dance1">
+<param name="landing" value="116"/>
+</custom>
+<custom name="localhost">
+<param name="url" value="http://localhost:8080/v/games/info/supershell.swf"/>
+<param name="main" value="http://localhost:8080/v/"/>
+<param name="cdn" value="http://localhost:8080/v/"/>
+<param name="image" value="http://localhost:8080/i/"/>
+<param name="cdn-dynamic-personal" value="http://localhost:8080/shared/"/>
+<param name="cdn-dynamic-photos" value="http://localhost:8080/shared/"/>
+<param name="cdn-dynamic-contests" value="http://localhost:8080/shared/"/>
+<param name="cdn-dynamic-crews" value="http://localhost:8080/shared/"/>
+<param name="cdn-dynamic-common" value="https://s3e-images.ourworld.com/shared/"/>
+<param name="future" value="false"/>
+</custom>
+<custom name="playtest">
+<param name="url" value="http://playtest.ourworld.com/v11/games/info/supershell.swf"/>
+<param name="main" value="http://playtest.ourworld.com/v11/"/>
+<param name="cdn" value="http://playtest.ourworld.com/v11/"/>
+<param name="image" value="http://playtest.ourworld.com/i/"/>
+<param name="cdn-dynamic-personal" value="http://playtest.ourworld.com/shared/"/>
+<param name="cdn-dynamic-photos" value="http://playtest.ourworld.com/shared/"/>
+<param name="cdn-dynamic-contests" value="http://playtest.ourworld.com/shared/"/>
+<param name="cdn-dynamic-crews" value="http://playtest.ourworld.com/shared/"/>
+<param name="cdn-dynamic-common" value="https://s3e-images.ourworld.com/shared/"/>
+<param name="future" value="false"/>
+</custom>
+<custom name="addictinggames">
+<param name="env" value="addictinggames"/>
+</custom>
 </supershell>
-
