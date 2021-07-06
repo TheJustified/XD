@@ -205,10 +205,10 @@
 
   <Layout gridsquare="200">
     <Perimeter coords="world">
-      <Vertex x="-65500" y="0" z="0"/>
-      <Vertex x="65500" y="0" z="0"/>
-      <Vertex x="65500" y="0" z="0"/>
-      <Vertex x="-65500" y="0" z="0"/>
+      <Vertex x="-65500" y="1" z="0"/>
+      <Vertex x="65500" y="1" z="0"/>
+      <Vertex x="65500" y="1" z="0"/>
+      <Vertex x="-65500" y="1" z="0"/>
     </Perimeter>
     <Nowalk>
       <Zone x="-5350" y="200" width="2000" height="200"/>
