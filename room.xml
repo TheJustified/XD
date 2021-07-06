@@ -211,7 +211,7 @@
       <Vertex x="-65500" y="32000" z="0"/>
     </Perimeter>
     <Nowalk>
-      <Zone x="-5350000" y="200000" width="2000000" height="20000"/>
+      <Zone x="-5350" y="200" width="2000" height="200"/>
       <Zone x="-2750" y="200" width="200" height="200"/>
       <Zone x="-350" y="200" width="200" height="200"/>
       <Zone x="2050" y="200" width="2000" height="200"/>
