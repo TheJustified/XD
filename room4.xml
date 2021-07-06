@@ -206,8 +206,8 @@
   <Layout gridsquare="200">
     <Perimeter coords="world">
       <Vertex x="-65500" y="2000" z="0"/>
-      <Vertex x="0" y="2000" z="0"/>
-      <Vertex x="0" y="32000" z="0"/>
+      <Vertex x="65500" y="2000" z="0"/>
+      <Vertex x="65500" y="32000" z="0"/>
       <Vertex x="-65500" y="32000" z="0"/>
     </Perimeter>
     <Nowalk>
