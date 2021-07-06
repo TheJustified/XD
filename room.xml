@@ -43,13 +43,13 @@
 		<Asset file="foreground.swf" scale="1.0" name="foreground" layer="99" coords="screen" x="-1629" y="518" blendmode="erase" depth="0"/>-->
 
 		<!--Commented out during Bento Box & Halloween & easter i.e. this is the NORMAL one-->
-		 <Asset file="boardwalk_backdrop.jpg" scale="1.0" name="back" layer="0" coords="screen" x="-1750" y="0" />
+	<!--	 <Asset file="boardwalk_backdrop.jpg" scale="1.0" name="back" layer="0" coords="screen" x="-1750" y="0" />
 
 		<!--EASTER BACKGROUND-->
 		<!--<Asset file="boardwalk_backdropeaster.jpg" scale="1.0" name="back" layer="0" coords="screen" x="-1750" y="0" />-->
 
 		<!--HALLOWEEN BACKGROUND-->
-		<!--<Asset file="boardwalk_backdrop_oct.jpg" scale="1.0" name="back" layer="0" coords="screen" x="-1750" y="0" />-->
+		<Asset file="boardwalk_backdrop_oct.jpg" scale="1.0" name="back" layer="0" coords="screen" x="-1750" y="0" />-->
 
 		<!--Commented out during Bento Box cause the railing interferes with bento railing-->
 		<Asset file="boardwalk_foreground_01.swf" scale="1.0" name="fore1" layer="60" coords="screen" x="-1750" y="538" />
@@ -75,7 +75,7 @@
 		<!-- EASTER -->
 		<!--<Asset file="easterswing.swf" scale=".8" name="easterswing" layer="9" coords="screen" x="-330" y="260" required="false"/>-->
 		<!-- HALLOWEEN -->
-	  <!--<Asset file="halloween_basket.swf" scale=".8" name="halloweenswing" layer="9" coords="screen" x="-345" y="255" required="false"/>
+	        <Asset file="halloween_basket.swf" scale=".8" name="halloweenswing" layer="9" coords="screen" x="-345" y="255" required="false"/>
 		<Asset file="caldron_3.swf" scale="1.2" name="cauldron" layer="9" coords="screen" x="-1835" y="125" required="false" stopframe="0" />-->
 
 		<Asset file="ea_sign.swf" scale="1.0" name="ea_sign" layer="9" coords="screen" x="-2250" y="92" required="false"/>
