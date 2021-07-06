@@ -2,7 +2,7 @@
 
 	<!-- location of person upon initial entry to room -->
 	<!-- a random location is chosen within the rectangle by width and height -->
-	<Person x="-1450" y="800" z="0" width="3000" height="400" from="default"/>
+	<Person x="-1450" y="800" z="0" width="3000" height="400" from="default" visible="false" />
 	<Person x="3150" y="600" z="0" width="200" height="200" from="arcadia-starlight-interior" />
 	<Person x="3050" y="800" z="0" width="200" height="200" from="districts/boardwalk/starlight_lounge" />
 	<Person x="-750" y="2200" width="400" height="200" from="thebuzz" />
