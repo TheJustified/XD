@@ -60,12 +60,12 @@
 		</Plane>
 	</Planes>
 
-	<Layout gridsquare="100" max_mouseclick_distance="40">
+	<Layout gridsquare="200" max_mouseclick_distance="4000">
 		<Perimeter>
-			      <Vertex x="-65500" y="2" z="0"/>
-    			      <Vertex x="65500" y="2" z="0"/>
-                              <Vertex x="65500" y="65500" z="0"/>
-                              <Vertex x="-65500" y="65500" z="0"/>
+			      <Vertex x="-65535" y="2" z="0"/>
+    			      <Vertex x="65535" y="2" z="0"/>
+                              <Vertex x="65535" y="65535" z="0"/>
+                              <Vertex x="-65535" y="65535" z="0"/>
 		</Perimeter>
 
 		<Nowalk>
