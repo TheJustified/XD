@@ -162,7 +162,7 @@
 <Hatch itemid="4000000" count="1"/>
 </Egg>
 <Egg name="Owl Egg" itemid="4000176" level="5" exp="2" base="399" profit="49" url="i/avatars/ministores/hatchlings/eggs/hatchling_005/hatch1/level1/item.swf" text="condo.hatch.unlock_owl" url2="i/avatars/ministores/hatchlings/popup/hatchling_005.swf" sound="critter_owl"/>
-<Egg name="Shark Egg" itemid="4000391" level="6" exp="2" base="335" profit="35" url="i/avatars/ministores/hatchlings/eggs/hatchling_010/hatch1/level1/item.swf" text="condo.hatch.unlock_shark" url2="i/avatars/ministores/hatchlings/popup/hatchling_010.swf" sound="critter_shark"/>
+<Egg name="Shark Egg" itemid="4001314" level="6" exp="2" base="335" profit="35" url="i/avatars/ministores/hatchlings/eggs/hatchling_010/hatch1/level1/item.swf" text="condo.hatch.unlock_shark" url2="i/avatars/ministores/hatchlings/popup/hatchling_010.swf" sound="critter_shark"/>
 <Egg name="Winged Snake Egg" itemid="4000305" level="8" exp="3" base="717" profit="217" url="i/avatars/ministores/hatchlings/eggs/hatchling_008/hatch1/level1/item.swf" text="condo.hatch.unlock_snake" url2="i/avatars/ministores/hatchlings/popup/hatchling_008.swf" sound="critter_snake"/>
 <Egg name="Octopus Egg" itemid="4000219" level="9" exp="2" base="482" profit="32" url="i/avatars/ministores/hatchlings/eggs/hatchling_006/hatch1/level1/item.swf" text="condo.hatch.unlock_octopus" url2="i/avatars/ministores/hatchlings/popup/hatchling_006.swf" sound="critter_octopus"/>
 <Egg name="Bat Egg" itemid="4000497" level="10" exp="2" base="615" profit="15" url="i/avatars/ministores/hatchlings/eggs/hatchling_012/hatch1/level1/item.swf" text="condo.hatch.unlock_bat" url2="i/avatars/ministores/hatchlings/popup/hatchling_012.swf" sound="critter_bat"/>
