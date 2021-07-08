@@ -454,13 +454,7 @@
 			<Item id="156701" />
 		</Male>
 		<Female>
-<Item id="2035419"/>
-<Item id="2035420"/>
-<Item id="2035420">
-<Item id="3002532"/> <!-- might be breaking it -->
-<Item id="29341"/>
-<Item id="6294"/>
-<Item id="7608"/> <!-- copuld also break it -->
+
 		</Female>
 	</Shop>
 
