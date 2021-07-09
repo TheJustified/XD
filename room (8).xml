@@ -1,0 +1,236 @@
+<Room name="Midnight Buffet">
+
+<Person x="800" y="500" width="400" height="200" from="default" />
+
+<!-- how fast person walks in this room -->
+<Walk speed="10000" framerate="40" />
+
+<!-- camera settings -->
+<Camera x="0" y="-3750" z="4700" focalX="0" focalY="-1130" focalLength="1460" />
+
+<!-- scroll settings -->
+<scroll minspeed="80" maxspeed="250" thresholdX="200" />
+
+<Assets>
+	<!-- background -->
+	<Asset file="backdrop.jpg" scale="1.0" name="back" layer="1" coords="screen" x="-622" y="0"/>
+
+	<!-- foreground -->
+	<Asset file="cafe_benches.png" name="bench" layer="50" x="-601" y="475" depth="150" />
+	<Asset file="cafe_tabletop2.png" name="table" layer="51" x="-601" y="475" depth="99" />
+	<Asset file="cafe_tabletop.png" name="table" layer="51" x="-622" y="0" />
+
+	<!-- code -->
+	<Asset file="midnightbuffet.swf" name="buffet" type="app" layer="10" x="0" y="0" />
+
+	<!-- UI -->
+	<Asset symbol="Exit_Btn" name="exit_button2" layer="ui" coords="screen" x="418" y="45" cursor="door"/>
+
+	<Asset file="octopus_cage.swf" name="octo" layer="10" x="-463" y="181"  />
+	<Asset file="owner_02.swf" name="fire" layer="10" x="230" y="80" visible="false" />
+	<Asset file="windows_shop.swf" name="windows" layer="10" x="-390" y="123" stopframe="0" />
+
+</Assets>
+
+<!-- polygon shapes can be used to supplement the graphical assets-->
+<Shapes>
+	<Shape name="shopleft" coords="screen" fill="none" color1="0x00ff00" layer="10" cursor="hand">
+		<Vertex x="-437" y="170" />
+		<Vertex x="-317" y="170" />
+		<Vertex x="-317" y="290" />
+		<Vertex x="-437" y="290" />
+  	</Shape>	
+	<Shape name="shopcenter" coords="screen" fill="none" color1="0x00ff00" layer="10" cursor="hand">
+		<Vertex x="-247" y="170" />
+		<Vertex x="-127" y="170" />
+		<Vertex x="-127" y="290" />
+		<Vertex x="-247" y="290" />
+  	</Shape>	
+	<Shape name="shopright" coords="screen" fill="none" color1="0x00ff00" layer="10" cursor="hand">
+		<Vertex x="-62" y="170" />
+		<Vertex x="58" y="170" />
+		<Vertex x="58" y="290" />
+		<Vertex x="-62" y="290" />
+  	</Shape>	
+	<Shape name="demon" coords="screen" fill="none" color1="0x00ff00" layer="10" cursor="hand">
+		<Vertex x="325" y="130" />
+		<Vertex x="390" y="130" />
+		<Vertex x="390" y="265" />
+		<Vertex x="325" y="265" />
+  	</Shape>	
+
+	<!-- seats -->
+	<Shape name="seat1" coords="screen" fill="none" color1="0x00ff00" layer="10" cursor="chair">
+		<Vertex x="-552" y="540" />
+		<Vertex x="-502" y="540" />
+		<Vertex x="-522" y="600" />
+		<Vertex x="-592" y="600" />
+  	</Shape>	
+
+	<Shape name="seat2" coords="screen" fill="none" color1="0x00ff00" layer="10" cursor="chair">
+		<Vertex x="-345" y="540" />
+		<Vertex x="-297" y="540" />
+		<Vertex x="-312" y="600" />
+		<Vertex x="-360" y="600" />
+  	</Shape>	
+
+	<Shape name="seat3" coords="screen" fill="none" color1="0x00ff00" layer="10" cursor="chair">
+		<Vertex x="-272" y="540" />
+		<Vertex x="-228" y="540" />
+		<Vertex x="-237" y="600" />
+		<Vertex x="-285" y="600" />
+  	</Shape>	
+
+	<Shape name="seat4" coords="screen" fill="none" color1="0x00ff00" layer="10" cursor="chair">
+		<Vertex x="-82" y="540" />
+		<Vertex x="-37" y="540" />
+		<Vertex x="-42" y="600" />
+		<Vertex x="-87" y="600" />
+  	</Shape>	
+
+	<Shape name="seat5" coords="screen" fill="none" color1="0x00ff00" layer="10" cursor="chair">
+		<Vertex x="-2" y="540" />
+		<Vertex x="40" y="540" />
+		<Vertex x="40" y="600" />
+		<Vertex x="-4" y="600" />
+  	</Shape>	
+
+	<Shape name="seat6" coords="screen" fill="none" color1="0x00ff00" layer="10" cursor="chair">
+		<Vertex x="183" y="540" />
+		<Vertex x="223" y="540" />
+		<Vertex x="230" y="600" />
+		<Vertex x="188" y="600" />
+  	</Shape>	
+
+	<Shape name="seat7" coords="screen" fill="none" color1="0x00ff00" layer="10" cursor="chair">
+		<Vertex x="263" y="540" />
+		<Vertex x="300" y="540" />
+		<Vertex x="312" y="600" />
+		<Vertex x="270" y="600" />
+  	</Shape>	
+
+	<Shape name="seat8" coords="screen" fill="none" color1="0x00ff00" layer="10" cursor="chair">
+		<Vertex x="450" y="540" />
+		<Vertex x="493" y="540" />
+		<Vertex x="508" y="600" />
+		<Vertex x="464" y="600" />
+  	</Shape>	
+
+</Shapes>
+
+<!-- Layout defines the "walkable" area of the room, which is a closed polygon defined by a 
+	list of vertices.  gridsquare is the size of grid squares used to partition the 
+	room for path finding. ideally the perimeter dimensions should be multiples of the 
+	grid square size. -->
+<Layout gridsquare="100" max_mouseclick_distance="20">
+<Perimeter coords="world" >
+	<Vertex x="-1500" y="800" z="0" />
+	<Vertex x="1800" y="800" z="0" />
+	<Vertex x="1800" y="300" z="0" />
+	<Vertex x="-1500" y="300" z="0" />
+</Perimeter>
+<Nowalk>
+	<Zone x="-1500" y="300" width="3000" height="100"/>
+</Nowalk>
+<Nostand>
+</Nostand>
+</Layout>
+
+<Sounds>
+	<Sound name="radio" type="OWPop" />
+</Sounds>
+
+<Actions>
+
+	<Action name="shopleft" target="shopleft" trigger="click" >
+		<step action="event" target="shopleft"/>
+	</Action>
+	<Action name="shopcenter" target="shopcenter" trigger="click" >
+		<step action="event" target="shopcenter"/>
+	</Action>
+	<Action name="shopright" target="shopright" trigger="click" >
+		<step action="event" target="shopright"/>
+	</Action>
+	<Action name="demon" target="demon" trigger="click" >
+		<step action="event" target="demon"/>
+	</Action>
+	<Action name="exit" target="exit_button2" trigger="click" >
+		<step action="gotoRoom" target="districts/nevermore/exterior" />
+	</Action>
+	<Action name="seat1" target="seat1" trigger="click" >
+		<step action="slot" target="0" />
+	</Action>
+	<Action name="seat2" target="seat2" trigger="click" >
+		<step action="slot" target="1" />
+	</Action>
+	<Action name="seat3" target="seat3" trigger="click" >
+		<step action="slot" target="2" />
+	</Action>
+	<Action name="seat4" target="seat4" trigger="click" >
+		<step action="slot" target="3" />
+	</Action>
+	<Action name="seat5" target="seat5" trigger="click" >
+		<step action="slot" target="4" />
+	</Action>
+	<Action name="seat6" target="seat6" trigger="click" >
+		<step action="slot" target="5" />
+	</Action>
+	<Action name="seat7" target="seat7" trigger="click" >
+		<step action="slot" target="6" />
+	</Action>
+	<Action name="seat8" target="seat8" trigger="click" >
+		<step action="slot" target="7" />
+	</Action>
+	<Action name="octopus" target="" trigger="periodic" interval="5000" >
+		<step action="playOnceForward" target="octo" />
+	</Action>
+</Actions>
+
+<Slots>
+	<Slot type="seat" x="-1300" y="100" z="0" angle="90" />
+	<Slot type="seat" x="-960" y="100" z="0" angle="270" />
+	<Slot type="seat" x="-580" y="100" z="0" angle="90" />
+	<Slot type="seat" x="-260" y="100" z="0" angle="270" />
+	<Slot type="seat" x="120" y="100" z="0" angle="90" />
+	<Slot type="seat" x="460" y="100" z="0" angle="270" />
+	<Slot type="seat" x="830" y="100" z="0" angle="90" />
+	<Slot type="seat" x="1160" y="100" z="0" angle="270" />
+</Slots>
+
+<NPCs>
+</NPCs>
+
+<Positions>
+</Positions>
+
+<shopleft>
+	<Male>
+		<Item id="2027355" url="i/avatars/attire/midnight_cafe/mglove1" loc="hand" />
+	</Male>
+	<Female>
+		<Item id="2027358" url="i/avatars/attire/midnight_cafe/fglove1" loc="hand" />
+	</Female>
+</shopleft>
+
+<shopcenter>
+	<Male>
+		<Item id="2027356" url="i/avatars/attire/midnight_cafe/mglove2" loc="hand"/>
+	</Male>
+	<Female>
+		<Item id="2027359" url="i/avatars/attire/midnight_cafe/fglove2" loc="hand" />
+	</Female>
+</shopcenter>
+
+<shopright>
+	<Male>
+		<Item id="2027357" url="i/avatars/attire/midnight_cafe/mglove3" loc="hand" />
+	</Male>
+	<Female>
+		<Item id="2027360" url="i/avatars/attire/midnight_cafe/fglove3" loc="hand" />
+	</Female>
+</shopright>
+
+
+<Throwing enabled="true" />
+
+</Room>
