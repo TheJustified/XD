@@ -556,7 +556,7 @@
 	</GoldenKey>
 
 	<!-- store is open on day 5 (friday). utcOffset is offset from UTC to PT which is 7 hours if DST, 8 hours otherwise -->
-     <MysteryMart day="6"  utcOffset="28800000" url="games/info/mysteryshop.swf">
+     <MysteryMart day="5"  utcOffset="28800000" url="games/info/mysteryshop.swf">
 		<Asset file="mystery_mart.swf" scale="1.0" name="mystery_mart" layer="47" coords="screen" x="8" y="4" depth="2000"/>
 		<Asset file="mole_idle.swf" scale="0.5" name="mole_idle" layer="48" coords="screen" x="231" y="297" depth="2000"/>
 	</MysteryMart>
