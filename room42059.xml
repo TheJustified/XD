@@ -205,7 +205,7 @@
 
 <shopleft>
 	<Male>
-		<Item id="2027355" url="i/avatars/attire/midnight_cafe/mglove1" loc="hand" />
+		<Item id="13654" url="i/avatars/attire/npc_caden/mhair1" loc="hair" />
 	</Male>
 	<Female>
 		<Item id="2027358" url="i/avatars/attire/midnight_cafe/fglove1" loc="hand" />
