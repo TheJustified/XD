@@ -1,7 +1,7 @@
 <Room name="Golden Key Dungeon">
 <Person x="250" y="750" width="100" height="100" from="default" />
 
-<Walk speed="5000" framerate="40" />
+<Walk speed="5000" framerate="140" />
 
 <Camera x="0" y="-1600" z="1100" focalX="0" focalY="100" focalLength="1000" />
 
