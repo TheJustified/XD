@@ -1,0 +1,130 @@
+<Room name="Golden Key Dungeon">
+<Person x="250" y="750" width="100" height="100" from="default" />
+
+<Walk speed="5000" framerate="40" />
+
+<Camera x="0" y="-1600" z="1100" focalX="0" focalY="100" focalLength="1000" />
+
+<scroll minspeed="0" maxspeed="0" thresholdX="0" />
+<Assets>
+  <Asset file="backdrop.jpg" scale="1.0" name="back" layer="1" coords="screen" x="-495" y="0"/>
+  <Asset file="gems_3.swf" scale="1.0" name="gems_3" layer="50" coords="screen" x="-495" y="440" depth="2000"/>
+  <Asset file="key_pillar_door.swf" scale="1.0" name="key_pillar_door" layer="50" coords="screen" x="-495" y="79" depth="2000"/>
+  <Asset file="lava_03_final.swf" scale="1.0" name="lava" layer="48" coords="screen" x="-314" y="34" depth="2000"  />
+  <Asset file="lava_tentacle_02_final.swf" scale="1.0" name="lava_tentacle" layer="49" coords="screen" x="-304" y="-10" depth="2000"/>
+  <Asset file="mask_foreground.swf" scale="1.0" name="fore" layer="51" coords="screen" x="-495" y="543" blendmode="erase"/>
+
+  <Asset file="chest_golden_01.swf" scale="0.9" name="chest1" layer="50" coords="screen" x="-375" y="255" depth="1600" visible="false" />
+  <Asset file="chest_golden_01.swf" scale="0.8" name="chest3" layer="50" coords="screen" x="-235" y="255" depth="1700" visible="false" />
+  <Asset file="chest_golden_01.swf" scale="0.7" name="chest4" layer="50" coords="screen" x="-85" y="260" depth="1800" visible="false" />
+  <Asset file="chest_golden_01.swf" scale="0.85" name="chest2" layer="50" coords="screen" x="-20" y="260" depth="1600" visible="false" />
+
+  <Asset file="dungeon.swf" name="dungeon" type="app" layer="70" x="0" y="0" />
+  <Asset symbol="Exit_Btn" name="exit_button" layer="98" coords="screen" x="400" y="45" cursor="door"/>
+
+</Assets>
+
+<Shapes>
+	<Shape name="door_hit" coords="screen" fill="none" color1="0x00ff00" layer="10" >
+		<Vertex x="-415" y="220" />
+		<Vertex x="-315" y="220" />
+		<Vertex x="-315" y="430" />
+		<Vertex x="-415" y="430" />
+  	</Shape>	
+</Shapes>
+
+
+<Layout gridsquare="80" >
+<Perimeter coords="world" >
+	<Vertex x="-1200" y="1500" z="0" />
+	<Vertex x="1200" y="1500" z="0" />
+	<Vertex x="1200" y="400" z="0" />
+	<Vertex x="-1200" y="400" z="0" />
+</Perimeter>
+<Nowalk>
+<Zone x="-1040" y="400" width="320" height="80"/>
+<Zone x="320" y="400" width="400" height="80"/>
+<Zone x="800" y="400" width="160" height="80"/>
+<Zone x="-1120" y="480" width="400" height="80"/>
+<Zone x="400" y="480" width="160" height="80"/>
+<Zone x="800" y="480" width="240" height="80"/>
+<Zone x="-1120" y="560" width="400" height="80"/>
+<Zone x="880" y="560" width="160" height="80"/>
+<Zone x="-1200" y="640" width="160" height="80"/>
+<Zone x="960" y="640" width="80" height="80"/>
+<Zone x="960" y="720" width="160" height="80"/>
+<Zone x="400" y="800" width="240" height="80"/>
+<Zone x="1040" y="800" width="80" height="80"/>
+<Zone x="400" y="880" width="80" height="80"/>
+<Zone x="560" y="880" width="80" height="80"/>
+<Zone x="1120" y="880" width="80" height="80"/>
+<Zone x="400" y="960" width="80" height="80"/>
+<Zone x="560" y="960" width="160" height="80"/>
+<Zone x="400" y="1040" width="400" height="80"/>
+<Zone x="-1200" y="1120" width="80" height="80"/>
+<Zone x="720" y="1120" width="160" height="80"/>
+<Zone x="-1200" y="1200" width="80" height="80"/>
+<Zone x="800" y="1200" width="80" height="80"/>
+<Zone x="-1200" y="1280" width="80" height="80"/>
+<Zone x="800" y="1280" width="160" height="80"/>
+<Zone x="-880" y="1360" width="160" height="80"/>
+<Zone x="800" y="1360" width="240" height="80"/>
+</Nowalk>
+<Nostand>
+<Zone x="240" y="400" width="80" height="80"/>
+<Zone x="720" y="400" width="80" height="80"/>
+</Nostand>
+
+</Layout>
+
+<Sounds>
+	<Sound name="music" file="skeleton_key_dungeon_music.mp3" type="ambient" duration="0" volume="60" />
+</Sounds>
+
+<Actions>
+	<Action name="anim1" target="gems_3" trigger="periodic" interval="5000" >
+		<step action="playOnceForward" target="gems_3" />
+	</Action>
+	<Action name="throwkey1" target="chest1" trigger="throw">
+		<step action="event" target="chest1" delay="500" />
+	</Action>
+	<Action name="throwkey2" target="chest2" trigger="throw">
+		<step action="event" target="chest2" delay="500" />
+	</Action>
+	<Action name="throwkey3" target="chest3" trigger="throw">
+		<step action="event" target="chest3" delay="500" />
+	</Action>
+	<Action name="throwkey4" target="chest4" trigger="throw">
+		<step action="event" target="chest4" delay="500" />
+	</Action>
+	<Action name="anim2" target="lava" trigger="periodic" interval="25000" >
+		<step action="play" target="lava" />
+	</Action>
+	<Action name="anim3" target="lava_tentacle" trigger="periodic" interval="25000" >
+		<step action="play" target="lava_tentacle" delay="12000"/>
+	</Action>
+	<!-- when user clicks exit button, exit the store and go to the boardwalk -->
+	<Action name="exit" target="exit_button" trigger="click" >
+			<step name="exitRoom" action="gotoRoom" target="districts/nevermore/exterior" delay="0"/>
+	</Action>
+</Actions>
+
+<Slots>
+</Slots>
+
+<NPCs>
+</NPCs>
+
+<Positions>
+	<Position x="640" y="1400" z="0" />
+</Positions>
+
+<!-- only key can be thrown -->
+<Throwing enabled="false" >
+	<Target name="chest1" />
+	<Target name="chest2" />
+	<Target name="chest3" />
+	<Target name="chest4" />
+</Throwing>
+
+</Room>
