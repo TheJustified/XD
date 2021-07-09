@@ -1722,7 +1722,7 @@
 		</restrict>
 		
 		<restrict gender="boy">
-			<restrict freqVisible="0" freqInvisible="0" freqOffset="00"><id>2031167</id></restrict>
+			<restrict freqVisible="11111111110" freqInvisible="0" freqOffset="00"><id>2031167</id></restrict>
 			<restrict freqVisible="0" freqInvisible="0" freqOffset="10"><id>2031179</id></restrict>
 			<restrict freqVisible="0" freqInvisible="0" freqOffset="20"><id>2031180</id></restrict>			
 			<restrict freqVisible="0" freqInvisible="0" freqOffset="30"><id>2031181</id></restrict>	
@@ -1735,7 +1735,7 @@
 		</restrict>
 	</restrict>
 		
-	<restrict date="9/10/2021">
+	<restrict date="7/10/2021">
 		<restrict gender="girl">
 			<restrict freqVisible="0" freqInvisible="0" freqOffset="00"><id>2051730</id></restrict>
 			<restrict freqVisible="0" freqInvisible="0" freqOffset="10"><id>2051680</id></restrict>
@@ -1750,7 +1750,7 @@
 		</restrict>
 		
 		<restrict gender="boy">
-			<restrict freqVisible="0" freqInvisible="0" freqOffset="00"><id>2051720</id></restrict>
+			<restrict freqVisible="111111110" freqInvisible="0" freqOffset="00"><id>2051720</id></restrict>
 			<restrict freqVisible="0" freqInvisible="0" freqOffset="10"><id>205160</id></restrict>
 			<restrict freqVisible="0" freqInvisible="0" freqOffset="20"><id>2051650</id></restrict>			
 			<restrict freqVisible="0" freqInvisible="0" freqOffset="30"><id>2051640</id></restrict>	
@@ -1765,7 +1765,7 @@
 		
 	<restrict date="8/10/2021">
 		<restrict gender="girl">
-			<restrict freqVisible="0" freqInvisible="0" freqOffset="00"><id>2037090</id></restrict>
+			<restrict freqVisible="11111111110" freqInvisible="0" freqOffset="00"><id>2037090</id></restrict>
 			<restrict freqVisible="0" freqInvisible="0" freqOffset="10"><id>2037066</id></restrict>
 			<restrict freqVisible="0" freqInvisible="0" freqOffset="20"><id>2037056</id></restrict>					
 			<restrict freqVisible="0" freqInvisible="0" freqOffset="30"><id>2036939</id></restrict>	
@@ -1778,11 +1778,11 @@
 		</restrict>
 		
 		<restrict gender="boy">
-			<restrict freqVisible="0" freqInvisible="0" freqOffset="00"><id>2037080</id></restrict>
+			<restrict freqVisible="111111110" freqInvisible="0" freqOffset="00"><id>2037080</id></restrict>
 			<restrict freqVisible="0" freqInvisible="0" freqOffset="10"><id>2037046</id></restrict>
 			<restrict freqVisible="0" freqInvisible="0" freqOffset="20"><id>2037036</id></restrict>			
 			<restrict freqVisible="0" freqInvisible="0" freqOffset="30"><id>2036930</id></restrict>	
-			<restrict freqVisible="0" freqInvisible="0" freqOffset="40"><id>2036912</id></restrict>
+			<restrict freqVisible="1111111110" freqInvisible="0" freqOffset="40"><id>2036912</id></restrict>
 			<restrict freqVisible="0" freqInvisible="0" freqOffset="50"><id>2031275</id></restrict>			
 			<restrict freqVisible="0" freqInvisible="0" freqOffset="0"><id>2031218</id></restrict>
 			<restrict freqVisible="0" freqInvisible="0" freqOffset="70"><id>2031146</id></restrict>				
@@ -1793,11 +1793,11 @@
 		
 	<restrict date="7/10/2021">
 		<restrict gender="girl">
-			<restrict freqVisible="0" freqInvisible="0" freqOffset="00"><id>2031213</id></restrict>
+			<restrict freqVisible="11111111110" freqInvisible="0" freqOffset="00"><id>2031213</id></restrict>
 			<restrict freqVisible="0" freqInvisible="0" freqOffset="10"><id>2031202</id></restrict>
 			<restrict freqVisible="0" freqInvisible="0" freqOffset="20"><id>2031176</id></restrict>					
 			<restrict freqVisible="0" freqInvisible="0" freqOffset="30"><id>2031154</id></restrict>	
-			<restrict freqVisible="0" freqInvisible="0" freqOffset="40"><id>2029971</id></restrict>
+			<restrict freqVisible="11111111" freqInvisible="0" freqOffset="40"><id>2029971</id></restrict>
 			<restrict freqVisible="0" freqInvisible="0" freqOffset="50"><id>2029955</id></restrict>			
 			<restrict freqVisible="0" freqInvisible="0" freqOffset="0"><id>2029923</id></restrict>
 			<restrict freqVisible="0" freqInvisible="0" freqOffset="70"><id>2029869</id></restrict>				
@@ -1806,7 +1806,7 @@
 		</restrict>
 		
 		<restrict gender="boy">
-			<restrict freqVisible="0" freqInvisible="0" freqOffset="00"><id>2031208</id></restrict>
+			<restrict freqVisible="111111111110" freqInvisible="0" freqOffset="00"><id>2031208</id></restrict>
 			<restrict freqVisible="0" freqInvisible="0" freqOffset="10"><id>2031197</id></restrict>
 			<restrict freqVisible="0" freqInvisible="0" freqOffset="20"><id>2031169</id></restrict>			
 			<restrict freqVisible="0" freqInvisible="0" freqOffset="30"><id>2031138</id></restrict>	
@@ -1821,7 +1821,7 @@
 		
 	<restrict date="01/01/2022">
 		<restrict gender="girl">
-			<restrict freqVisible="0" freqInvisible="0" freqOffset="00"><id>2028298</id></restrict>
+			<restrict freqVisible="1111101" freqInvisible="0" freqOffset="00"><id>2028298</id></restrict>
 			<restrict freqVisible="0" freqInvisible="0" freqOffset="10"><id>2028312</id></restrict>
 			<restrict freqVisible="0" freqInvisible="0" freqOffset="20"><id>2029885</id></restrict>					
 			<restrict freqVisible="0" freqInvisible="0" freqOffset="30"><id>2029924</id></restrict>	
@@ -1834,7 +1834,7 @@
 		</restrict>
 		
 		<restrict gender="boy">
-			<restrict freqVisible="0" freqInvisible="0" freqOffset="00"><id>2028308</id></restrict>
+			<restrict freqVisible="1111111" freqInvisible="0" freqOffset="00"><id>2028308</id></restrict>
 			<restrict freqVisible="0" freqInvisible="0" freqOffset="10"><id>2028321</id></restrict>
 			<restrict freqVisible="0" freqInvisible="0" freqOffset="20"><id>2029881</id></restrict>			
 			<restrict freqVisible="0" freqInvisible="0" freqOffset="30"><id>2029916</id></restrict>	
