@@ -74,7 +74,7 @@
 		<Asset file="star_portal_01.swf" scale="1.0" name="star_portal" layer="31" coords="screen" x="1680" y="157" required="false"  />
 		<Asset file="/i/world/shared/assets/news_02.swf" scale="1" name="news2" layer="31" coords="screen" x="1379" y="244" required="false" />
 		<!--<Asset file="/i/world/shared/assets/gem_atm.swf" scale="1" name="gem_atm" layer="31" coords="screen" x="-1096" y="229" required="false" visible="false" />-->
-		<!--<Asset file="shovelbird.swf" name="shovelbird" layer="31" x="68" y="66"/>-->
+		-<Asset file="shovelbird.swf" name="shovelbird" layer="31" x="68" y="66"/
 		<Asset file="nm_door_001.swf" name="nm_door" layer="10" x="-1920" y="250" />
 		<Asset file="nm_moon_001.swf" name="nm_moon" layer="10" x="-1952" y="55" />
 		<Asset file="d_l_01.swf" name="dl" layer="10" x="-2000" y="206"  />
