@@ -3,7 +3,7 @@
 
 	<!-- location of person upon initial entry to room -->
 	<Person x="-400" y="3100" z="0" width="800" height="400"/>
-
+	<Person x="-200" y="1500" z="0" width="400" height="200" from="npc96010"/>	
 	<!-- how fast person walks in this room -->
 	<Walk speed="8000" framerate="40"/>
 
@@ -135,6 +135,7 @@
 
 	<Positions>
 		<Position x="0" y="2200" z="0" />
+		
 	</Positions>
 
 	<!-- condo specific -->
