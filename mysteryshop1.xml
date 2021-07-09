@@ -1,5 +1,5 @@
 <restrict> 	
-	<restrict date="7/10/2021">
+	<restrict date="6/10/2021">
 		<restrict gender="girl">
 			<restrict freqVisible="60" freqInvisible="60" freqOffset="00"><id>2037196</id></restrict>
 			<restrict freqVisible="60" freqInvisible="60" freqOffset="10"><id>2037160</id></restrict>
