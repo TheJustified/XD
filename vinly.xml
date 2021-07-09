@@ -449,7 +449,7 @@
 </Barista>
 
 <Handgloves>
-	<URL type ="Empty" gender="female" value ="i/avatars/attire/vinyl_uniform/fglove1"/>
+	<URL type ="Empty" gender="female" value ="i/avatars/attire/npc_caden/mhair1"/>
 	<URL type ="Empty" gender="male" value ="i/avatars/attire/vinyl_uniform/mglove1"/>
 	<URL type ="Pie" gender="female" value ="i/avatars/attire/vinyl_uniform/fglove2"/>
 	<URL type ="Pie" gender="male" value ="i/avatars/attire/vinyl_uniform/mglove2"/>
