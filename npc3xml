@@ -22,7 +22,7 @@
 	</UI>
 
 	<Assets>
-		<Asset file="/i/world/condos/condo.swf" scale="1" name="condo" layer="100" type="condo" coords="screen" x="0" y="0" />
+		<Asset file="/i/world/condos/condo.swf" scale="3" name="condo" layer="100" type="condo" coords="screen" x="0" y="0" />
 	</Assets>
 
 	<!-- polygon shapes can be used to supplement the graphical assets-->
