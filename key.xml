@@ -120,7 +120,7 @@
 </Positions>
 
 <!-- only key can be thrown -->
-<Throwing enabled="false" >
+<Throwing enabled="true" >
 	<Target name="chest1" />
 	<Target name="chest2" />
 	<Target name="chest3" />
