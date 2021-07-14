@@ -50,48 +50,16 @@
 	list of vertices.  gridsquare is the size of grid squares used to partition the 
 	room for path finding. ideally the perimeter dimensions should be multiples of the 
 	grid square size.  -->
-<Layout gridsquare="100" max_mouseclick_distance="20">
+<Layout gridsquare="200" max_mouseclick_distance="1000">
 <Perimeter coords="world">
-<Vertex x="-2700" y="2400" z="0"/>
-<Vertex x="2700" y="2400" z="0"/>
-<Vertex x="2700" y="600" z="0"/>
-<Vertex x="-2700" y="600" z="0"/>
+<Vertex x="-65535" y="2" z="0"/>
+<Vertex x="65535" y="2" z="0"/>
+<Vertex x="65535" y="65535" z="0"/>
+<Vertex x="-65535" y="65535" z="0"/>
 </Perimeter>
 <Nowalk>
-<Zone x="-2700" y="600" width="5400" height="100"/>
-<Zone x="-2700" y="700" width="200" height="100"/>
-<Zone x="-2400" y="700" width="500" height="100"/>
-<Zone x="-1500" y="700" width="400" height="100"/>
-<Zone x="-600" y="700" width="400" height="100"/>
-<Zone x="300" y="700" width="400" height="100"/>
-<Zone x="1100" y="700" width="400" height="100"/>
-<Zone x="2000" y="700" width="400" height="100"/>
-<Zone x="2600" y="700" width="100" height="100"/>
-<Zone x="-2700" y="800" width="100" height="100"/>
-<Zone x="-2700" y="900" width="100" height="100"/>
-<Zone x="400" y="1300" width="2300" height="100"/>
-<Zone x="-200" y="1400" width="2900" height="100"/>
-<Zone x="-2700" y="1500" width="400" height="100"/>
-<Zone x="-200" y="1500" width="2900" height="100"/>
-<Zone x="-2700" y="1600" width="600" height="100"/>
-<Zone x="-2700" y="1700" width="700" height="100"/>
-<Zone x="-1200" y="1700" width="400" height="100"/>
-<Zone x="-2700" y="1800" width="1000" height="100"/>
-<Zone x="-1200" y="1800" width="3900" height="100"/>
-<Zone x="-2700" y="1900" width="1000" height="100"/>
-<Zone x="-1300" y="1900" width="4000" height="100"/>
-<Zone x="-2700" y="2000" width="1000" height="100"/>
-<Zone x="-1300" y="2000" width="4000" height="100"/>
-<Zone x="-2700" y="2100" width="1000" height="100"/>
-<Zone x="-1300" y="2100" width="4000" height="100"/>
-<Zone x="-2700" y="2200" width="1000" height="100"/>
-<Zone x="-1400" y="2200" width="4100" height="100"/>
-<Zone x="-2700" y="2300" width="1000" height="100"/>
-<Zone x="-1400" y="2300" width="4100" height="100"/>
 </Nowalk>
 <Nostand>
-<Zone x="-1100" y="1500" width="200" height="100"/>
-<Zone x="-1100" y="1600" width="200" height="100"/>
 </Nostand>
 </Layout>
 <Actions>
@@ -444,11 +412,11 @@
 <Popup message="vinyl.06"/>
 </Popups>
 <FlowActivity>
-<Activity name="becomeServer" points="50"/>
-<Activity name="serverOrder" points="150"/>
-<Activity name="sit" points="20"/>
-<Activity name="placeOrder" points="50"/>
-<Activity name="selectJukeboxMusic" points="100"/>
+<Activity name="becomeServer" points="500000"/>
+<Activity name="serverOrder" points="1500000"/>
+<Activity name="sit" points="200000"/>
+<Activity name="placeOrder" points="500000"/>
+<Activity name="selectJukeboxMusic" points="100000"/>
 </FlowActivity>
 <CharacterAnimations>
 <Animation id="1" name="idle_hold_002" female_url="i/avatars/animation/female/idle_hold_002" male_url="i/avatars/animation/male/idle_hold_002"/>
