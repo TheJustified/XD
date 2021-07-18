@@ -10,10 +10,10 @@
 <Asset file="lava_03_final.swf" scale="1.0" name="lava" layer="48" coords="screen" x="-314" y="34" depth="2000"/>
 <Asset file="lava_tentacle_02_final.swf" scale="1.0" name="lava_tentacle" layer="49" coords="screen" x="-304" y="-10" depth="2000"/>
 <Asset file="mask_foreground.swf" scale="1.0" name="fore" layer="51" coords="screen" x="-495" y="543" blendmode="erase"/>
-<Asset file="chest_golden_01.swf" scale="0.9" name="chest1" layer="50" coords="screen" x="-375" y="255" depth="1600" visible="false"/>
-<Asset file="chest_golden_01.swf" scale="0.8" name="chest3" layer="50" coords="screen" x="-235" y="255" depth="1700" visible="false"/>
-<Asset file="chest_golden_01.swf" scale="0.7" name="chest4" layer="50" coords="screen" x="-85" y="260" depth="1800" visible="false"/>
-<Asset file="chest_golden_01.swf" scale="0.85" name="chest2" layer="50" coords="screen" x="-20" y="260" depth="1600" visible="false"/>
+<Asset file="chest_golden_01.swf" scale="0.9" name="chest1" layer="50" coords="screen" x="-375" y="255" depth="1600" visible="true"/>
+<Asset file="chest_golden_01.swf" scale="0.8" name="chest3" layer="50" coords="screen" x="-235" y="255" depth="1700" visible="true"/>
+<Asset file="chest_golden_01.swf" scale="0.7" name="chest4" layer="50" coords="screen" x="-85" y="260" depth="1800" visible="true"/>
+<Asset file="chest_golden_01.swf" scale="0.85" name="chest2" layer="50" coords="screen" x="-20" y="260" depth="1600" visible="true"/>
 <Asset file="dungeon.swf" name="dungeon" type="app" layer="70" x="0" y="0"/>
 <Asset symbol="Exit_Btn" name="exit_button" layer="98" coords="screen" x="400" y="45" cursor="door"/>
 </Assets>
@@ -102,7 +102,7 @@
 <Position x="640" y="1400" z="0"/>
 </Positions>
 <!--  only key can be thrown  -->
-<Throwing enabled="false">
+<Throwing enabled="true">
 <Target name="chest1"/>
 <Target name="chest2"/>
 <Target name="chest3"/>
