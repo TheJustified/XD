@@ -56,9 +56,9 @@
 
 	<Layout gridsquare="10" max_mouseclick_distance="40" minScale="0.25" maxScale="0.45">
 		<Perimeter>
-			<Vertex x="0" y="335"/>
-			<Vertex x="0" y="335"/>
-			<Vertex x="5" y="658"/>
+			<Vertex x="190" y="335"/>
+			<Vertex x="890" y="335"/>
+			<Vertex x="1185" y="658"/>
 			<Vertex x="-115" y="658"/>
 		</Perimeter>
 		<PerimeterWorld>
