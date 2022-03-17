@@ -1,31 +1,35 @@
-
-<Room name="condo1" type="town" subtype="condo" >
-
-	<!-- location of person upon initial entry to room -->
-	<Person x="-400" y="3100" z="0" width="800" height="400"/>
-
-	<!-- how fast person walks in this room -->
-	<Walk speed="8000" framerate="40"/>
-
-	<!-- camera settings -->
-	<!--<Camera x="0" y="-3450" z="2800" focalX="495" focalY="-500" focalLength="2000" />  -->
-	<Camera x="0" y="-3650" z="1600" focalX="0" focalY="-60" focalLength="2000" />  
-
-	<!-- scroll settings. this room is a single screen so no scrolling -->
-	<scroll minspeed="0" maxspeed="0" thresholdX="0" minX="0" maxX="0" />
-
-	<!-- UI settings -->
-	<UI> 
-		<EffectsClock x="928" y="95" />
-		<Moves enable="true" />
-		<QuestHeads enable="false" />
-	</UI>
-
-	<Assets>
-		<Asset file="/i/world/condos/condo.swf" scale="1" name="condo" layer="100" type="condo" coords="screen" x="0" y="0" />
-	</Assets>
-
-	<!-- polygon shapes can be used to supplement the graphical assets-->
+<Room name="condo1" type="town" subtype="condo" width="1078" height="658" scale="2.8" starling="true">
+<!-- location of person upon initial entry to room -->
+<Person x="-1000" y="3100" z="0" width="800" height="400"/>
+<!-- how fast person walks in this room -->
+<Walk speed="75" framerate="20"/>
+<!-- camera settings -->
+<!--
+<Camera x="0" y="-3450" z="2800" focalX="495" focalY="-500" focalLength="2000" />  
+-->
+<Camera x="0" y="-3650" z="1600" focalX="0" focalY="-60" focalLength="2000"/>
+<!--
+ scroll settings. this room is a single screen so no scrolling 
+-->
+<scroll minspeed="0" maxspeed="0" thresholdX="0" minX="0" maxX="0"/>
+<!-- UI settings -->
+<UI>
+<EffectsClock x="928" y="95"/>
+<Moves enable="true"/>
+<QuestHeads enable="false"/>
+</UI>
+<Assets>
+<Asset file="/i/vg/world/condo_gpu/condo.swf" scale="1" name="CondoGpu" layer="10" type="condo" coords="screen" x="0" y="0"/>
+<Asset symbol="Exit_Btn" name="exit_button" scale="1.2" layer="ui" coords="screen" x="300" y="40" cursor="door"/>
+<Asset symbol="SpriteButtonRoomService" name="button_food_menu" layer="ui" coords="screen" x="-490" y="550"/>
+<Asset symbol="SpriteButtonCondoMusic" name="button_music" layer="ui" coords="screen" x="-490" y="112"/>
+<Asset symbol="SpriteInRoomSlots" name="in_room_slots" layer="50" coords="screen" x="-265" y="9"/>
+<Asset symbol="SpriteButtonPartySets" name="button_party_sets" layer="ui" coords="screen" x="-490" y="146"/>
+<Asset symbol="SpriteButtonCreateParty" name="button_create_party" layer="ui" coords="screen" x="-490" y="180"/>
+<Asset symbol="SpriteButtonHotel" name="button_hotel" layer="ui" coords="screen" x="-490" y="75"/>
+</Assets>
+<!--
+ polygon shapes can be used to supplement the graphical assets
 	<Shapes>
 		<Shape name="background" coords="screen" fill="verticalGradient" color1="0x86b6ff" color2="0xe0e0ff" layer="0" >
 			<Vertex x="-350" y="0" />
@@ -33,116 +37,93 @@
 			<Vertex x="350" y="350" />
 			<Vertex x="-350" y="350" />
 		</Shape>
-		<Shape name="door" coords="screen" fill="none" color1="0x00ff00" layer="30" cursor="door">
-			<Vertex x="400" y="165" />
-			<Vertex x="445" y="190" />
-			<Vertex x="445" y="450" />
-			<Vertex x="400" y="395" />
-		</Shape>
 	</Shapes>
-
-	<Planes>
-		<Plane name="left_wall" color="0xffffdd" scale="1.5" width="3800" height="1600" x="-1400" y="2600" z="800" angleX="0" angleY="0" angleZ="-90" layer="11"/>
+-->
+<Planes>
+<!--
+ <Plane name="left_wall" color="0xffffdd" scale="1.5" width="3800" height="1600" x="-1400" y="2600" z="800" angleX="0" angleY="0" angleZ="-90" layer="11"/>
 		<Plane name="right_wall" color="0xffffdd" scale="1.5" width="3800" height="1600" x="1400" y="2600" z="800" angleX="0" angleY="0" angleZ="+90" layer="12">
-			<mask name="door" color="0" scale="1" width="600" height="800" x="1400" y="3000" z="400" angleX="0" angleY="0" angleZ="+90" layer="15" blendMode="erase"/>
 		</Plane>
 		<Plane name="back_wall" color="0xffffdd" scale="1" width="2808" height="1600" x="0" y="4500" z="800" angleX="0" angleY="0" angleZ="0" layer="16">
-			<colorTransform multipliers="[1.0,1.0,1.0,1.0]" offsets="[-8,-8,-8,0]" /> 
+			<colorTransform multipliers="[1.0,1.0,1.0,1.0]" offsets="[-8,-8,-8,0]" />
 		</Plane>
-		<Plane name="floor" color="0xe0dccf" scale="1" width="2800" height="3800" x="0" y="2600" z="0" angleX="270" angleY="0" angleZ="0" layer="8" >
-			<filter type="gradient_glow" distance="0" angle="0" color="[0,0]" alpha="[0.4,0]" blurX="60" blurY="40" strength="1" quality="1" placement="inner"/>
-		</Plane>
-		<Plane name="door_floor" color="0xe0dccf" scale="1" width="400" height="600" x="1600" y="3000" z="0" angleX="270" angleY="0" angleZ="0" layer="10" >
-			<colorTransform multipliers="[1.0,1.0,1.0,1.0]" offsets="[-32,-32,-32,0]" />
-		</Plane>
-		<Plane name="door_wall" color="0xffffdd" scale="1" width="400" height="800" x="1600" y="3300" z="400" angleX="0" angleY="0" angleZ="0" layer="7">
-			<colorTransform multipliers="[1.0,1.0,1.0,1.0]" offsets="[-32,-32,-32,0]" />
-		</Plane>
-	</Planes>
-
-	<Layout gridsquare="200" max_mouseclick_distance="4000">
-		<Perimeter>
-			      <Vertex x="-65535" y="2" z="0"/>
-    			      <Vertex x="65535" y="2" z="0"/>
-                              <Vertex x="65535" y="65535" z="0"/>
-                              <Vertex x="-65535" y="65535" z="0"/>
-		</Perimeter>
-
-		<Nowalk>
-		</Nowalk>
-	</Layout>
-
-	<Sounds>
-	</Sounds>
-
-	<Actions>
-		<Action name="exit" target="door" trigger="click">
-			<step name="step1" action="gotoRoom" target="back" />
-		</Action>
-		<!--
-		<Action name="exit2" target="exit_btn" trigger="click">
-			<step name="step1" action="gotoRoom" target="back" />
-		</Action>
-		-->
-	</Actions>
-
-	<!-- create slots for up to 40 seats -->
-	<Slots>
-		<Slot type="chair" x="0" y="0"/>
-		<Slot type="chair" x="0" y="0"/>
-		<Slot type="chair" x="0" y="0"/>
-		<Slot type="chair" x="0" y="0"/>
-		<Slot type="chair" x="0" y="0"/>
-		<Slot type="chair" x="0" y="0"/>
-		<Slot type="chair" x="0" y="0"/>
-		<Slot type="chair" x="0" y="0"/>
-		<Slot type="chair" x="0" y="0"/>
-		<Slot type="chair" x="0" y="0"/>
-		<Slot type="chair" x="0" y="0"/>
-		<Slot type="chair" x="0" y="0"/>
-		<Slot type="chair" x="0" y="0"/>
-		<Slot type="chair" x="0" y="0"/>
-		<Slot type="chair" x="0" y="0"/>
-		<Slot type="chair" x="0" y="0"/>
-		<Slot type="chair" x="0" y="0"/>
-		<Slot type="chair" x="0" y="0"/>
-		<Slot type="chair" x="0" y="0"/>
-		<Slot type="chair" x="0" y="0"/>
-		<Slot type="chair" x="0" y="0"/>
-		<Slot type="chair" x="0" y="0"/>
-		<Slot type="chair" x="0" y="0"/>
-		<Slot type="chair" x="0" y="0"/>
-		<Slot type="chair" x="0" y="0"/>
-		<Slot type="chair" x="0" y="0"/>
-		<Slot type="chair" x="0" y="0"/>
-		<Slot type="chair" x="0" y="0"/>
-		<Slot type="chair" x="0" y="0"/>
-		<Slot type="chair" x="0" y="0"/>
-		<Slot type="chair" x="0" y="0"/>
-		<Slot type="chair" x="0" y="0"/>
-		<Slot type="chair" x="0" y="0"/>
-		<Slot type="chair" x="0" y="0"/>
-		<Slot type="chair" x="0" y="0"/>
-		<Slot type="chair" x="0" y="0"/>
-		<Slot type="chair" x="0" y="0"/>
-		<Slot type="chair" x="0" y="0"/>
-		<Slot type="chair" x="0" y="0"/>
-		<Slot type="chair" x="0" y="0"/>
-	</Slots>
-
-	<NPCs>
-	</NPCs>
-
-	<Positions>
-		<Position x="0" y="2200" z="0" />
-	</Positions>
-
-	<!-- condo specific -->
-
-	<Condo type="1" ui="true" clouds="true" >
-		<Snapshot type="jpg" width="300" height="200" offset="20" />
-	</Condo>
-
+-->
+<Plane name="floor" color="0xe0dccf" scale="1" width="2800" height="3800" x="0" y="2600" z="0" angleX="270" angleY="0" angleZ="0" layer="8">
+<filter type="gradient_glow" distance="0" angle="0" color="[0,0]" alpha="[0.4,0]" blurX="60" blurY="40" strength="1" quality="1" placement="inner"/>
+</Plane>
+</Planes>
+<Layout gridsquare="10" max_mouseclick_distance="40" minScale="0.25" maxScale="0.45">
+<Perimeter>
+<Vertex x="190" y="335"/>
+<Vertex x="890" y="335"/>
+<Vertex x="1185" y="658"/>
+<Vertex x="-115" y="658"/>
+</Perimeter>
+<PerimeterWorld>
+<Vertex x="-1350" y="900" z="0"/>
+<Vertex x="-1350" y="4400" z="0"/>
+<Vertex x="1350" y="4400" z="0"/>
+<Vertex x="1350" y="900" z="0"/>
+</PerimeterWorld>
+<Nowalk> </Nowalk>
+</Layout>
+<Sounds> </Sounds>
+<Actions>
+<Action name="exit" target="exit_button" trigger="click">
+<step action="gotoRoom" target="casino"/>
+</Action>
+<Action name="click_buyfood" target="button_food_menu" trigger="click">
+<step action="link" target="show_food_menu?fPartySet=true"/>
+</Action>
+</Actions>
+<!-- create slots for up to 40 seats -->
+<Slots>
+<Slot type="chair" x="0" y="0"/>
+<Slot type="chair" x="0" y="0"/>
+<Slot type="chair" x="0" y="0"/>
+<Slot type="chair" x="0" y="0"/>
+<Slot type="chair" x="0" y="0"/>
+<Slot type="chair" x="0" y="0"/>
+<Slot type="chair" x="0" y="0"/>
+<Slot type="chair" x="0" y="0"/>
+<Slot type="chair" x="0" y="0"/>
+<Slot type="chair" x="0" y="0"/>
+<Slot type="chair" x="0" y="0"/>
+<Slot type="chair" x="0" y="0"/>
+<Slot type="chair" x="0" y="0"/>
+<Slot type="chair" x="0" y="0"/>
+<Slot type="chair" x="0" y="0"/>
+<Slot type="chair" x="0" y="0"/>
+<Slot type="chair" x="0" y="0"/>
+<Slot type="chair" x="0" y="0"/>
+<Slot type="chair" x="0" y="0"/>
+<Slot type="chair" x="0" y="0"/>
+<Slot type="chair" x="0" y="0"/>
+<Slot type="chair" x="0" y="0"/>
+<Slot type="chair" x="0" y="0"/>
+<Slot type="chair" x="0" y="0"/>
+<Slot type="chair" x="0" y="0"/>
+<Slot type="chair" x="0" y="0"/>
+<Slot type="chair" x="0" y="0"/>
+<Slot type="chair" x="0" y="0"/>
+<Slot type="chair" x="0" y="0"/>
+<Slot type="chair" x="0" y="0"/>
+<Slot type="chair" x="0" y="0"/>
+<Slot type="chair" x="0" y="0"/>
+<Slot type="chair" x="0" y="0"/>
+<Slot type="chair" x="0" y="0"/>
+<Slot type="chair" x="0" y="0"/>
+<Slot type="chair" x="0" y="0"/>
+<Slot type="chair" x="0" y="0"/>
+<Slot type="chair" x="0" y="0"/>
+<Slot type="chair" x="0" y="0"/>
+<Slot type="chair" x="0" y="0"/>
+</Slots>
+<NPCs> </NPCs>
+<!-- condo specific -->
+<Condo type="1" ui="false" clouds="true"> </Condo>
+<!--
+ uncomment to make condo larger for members
 	<Mondo type="2" ui="true" clouds="true" delta="1100" width="1800" >
 		<Snapshot type="jpg" width="300" height="200" offset="20" />
 		<Background name="background" coords="screen" fill="verticalGradient" color1="0x86b6ff" color2="0xe0e0ff" layer="0" >
@@ -152,12 +133,8 @@
 			<Vertex x="-700" y="350" />
 		</Background>
 	</Mondo>
-
-	<DanceOff enabled="true"/>
-
-	<Throwing enabled="false" back="4500" floor="0" />
-
-
+	
+-->
+<DanceOff enabled="true"/>
+<Throwing enabled="true" back="4500" floor="0"/>
 </Room>
-
-
