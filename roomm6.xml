@@ -2,7 +2,7 @@
 <!-- location of person upon initial entry to room -->
 <Person x="-1000" y="3100" z="0" width="800" height="400"/>
 <!-- how fast person walks in this room -->
-<Walk speed="75" framerate="20"/>
+<Walk speed="6969" framerate="20"/>
 <!-- camera settings -->
 <!--
 <Camera x="0" y="-3450" z="2800" focalX="495" focalY="-500" focalLength="2000" />  
